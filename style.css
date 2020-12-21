@@ -59,20 +59,20 @@ body {
 }
 
 #join-btn a{
-    background-color: #ffbaf9;
+    background-color: pink;
     border-radius: 24px;
     transition: 0.2s;
 }
 
 #join-btn a:hover {
     text-decoration: none;
-    background-color: #ff40df;
+    background-color: orchid;
     border-radius: 24px;
 }
 
 .toggle-button {
     position: absolute;
-    top: 1.5rem;
+    top: 2rem;
     right: 10vw;
     display: none;
     flex-direction: column;
@@ -128,4 +128,72 @@ body {
         text-decoration: underline;
         background-color: transparent;
     }
+}
+
+footer {
+    background-color: pink;
+    padding: 1.5em 10vw;
+}
+
+.social-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links {
+    font-size: 1.5rem;
+}
+
+.social-buttons {
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.social-buttons:hover {
+    opacity: 0.8;
+}
+
+.fa-linkedin-in {
+    background: #007bb5;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 50%;
+}
+
+.fa-instagram {
+    background: #E1306C;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 50%;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 50%;
+}
+
+.fa-envelope {
+    background: #dd4b39;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 50%;
+}
+
+#foot-logo {
+    width: auto;
+    height: 4.5rem;
+}
+
+hr {
+    border-top: 1px solid #3a2201;
+    border-bottom-color: transparent;
+    opacity: 0.5;
+}
+
+.copyright {
+    text-align: center;
 }
