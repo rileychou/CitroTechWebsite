@@ -23,7 +23,6 @@ body {
 }
 
 .logo {
-    font-size: 1.5rem;
     margin: 0.5rem 0;
 }
 
@@ -54,17 +53,17 @@ body {
     color: #4a4a4a;
 }
 
-#join-btn {
+#news-btn {
     text-decoration: none;
 }
 
-#join-btn a{
+#news-btn a{
     background-color: pink;
     border-radius: 24px;
     transition: 0.2s;
 }
 
-#join-btn a:hover {
+#news-btn a:hover {
     text-decoration: none;
     background-color: orchid;
     border-radius: 24px;
@@ -86,6 +85,21 @@ body {
     width: 100%;
     background-color: white;
     border-radius: 10px;
+}
+
+.page-header {
+    background-color: #C6F0F4;
+}
+
+.header-logo-container {
+    
+}
+
+#header-logo {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid #EEE;
 }
 
 @media (max-width: 800px) {
@@ -120,13 +134,46 @@ body {
         display: flex;
     }
 
-    #join-btn a{
+    #news-btn a{
         display: block;
         background-color: transparent;
     }
-    #join-btn a:hover{
+    #news-btn a:hover{
         text-decoration: underline;
         background-color: transparent;
+    }
+    .social-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .social-buttons {
+        padding: 0.1rem ;
+    }
+    .social-links {
+        font-size: 1rem ;
+    }
+    .fa-linkedin-in {
+        padding: 0.8rem ;
+    }
+    
+    .fa-instagram {
+        padding: 0.8rem ;
+    }
+    
+    .fa-youtube {
+        padding: 0.8rem ;
+    }
+    
+    .fa-envelope {
+        padding: 0.8rem ;
+    }
+    #foot-logo {
+        width: auto;
+        height: 3rem ;
     }
 }
 
@@ -196,4 +243,38 @@ hr {
 
 .copyright {
     text-align: center;
+}
+
+@media (max-width: 480px) {
+    .social-buttons {
+        padding: 0.1rem;
+    }
+    .social-links {
+        font-size: 1rem;
+    }
+    .fa-linkedin-in {
+        padding: 0.8rem;
+    }
+    
+    .fa-instagram {
+        padding: 0.8rem;
+    }
+    
+    .fa-youtube {
+        padding: 0.8rem;
+    }
+    
+    .fa-envelope {
+        padding: 0.8rem;
+    }
+    #foot-logo {
+        width: auto;
+        height: 3rem;
+    }
+}
+
+@media (max-width: 360px) {
+    #nav-logo {
+        content: url(images/citroicon.png);
+    }
 }
