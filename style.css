@@ -14,6 +14,10 @@ body {
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     background-color: #ffe580;
@@ -89,17 +93,42 @@ body {
 
 .page-header {
     background-color: #C6F0F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10vw;
 }
 
 .header-logo-container {
-    
+    height: 100vh;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding-right: 4rem;
 }
 
 #header-logo {
-    width: 200px;
+    width: 300px;
     height: auto;
     border-radius: 50%;
     border: 4px solid #EEE;
+}
+
+.header-text h1{
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    font-size: 84px;
+    font-family: 'Now', sans-serif;
+    color: white;
+    text-shadow: 3px 3px #ffe580, 5px 5px #ffe58085;
+}
+
+.header-text h2{
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    margin-right: 0.5rem;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2em;
+    font-weight: 600;
 }
 
 @media (max-width: 800px) {
@@ -149,7 +178,18 @@ body {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
+    .social-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 520px) {
+    footer {
+        padding: 1.5em 10vw !important;
+    }
     .social-buttons {
         padding: 0.1rem ;
     }
@@ -179,7 +219,7 @@ body {
 
 footer {
     background-color: pink;
-    padding: 1.5em 10vw;
+    padding: 1.5em 15vw;
 }
 
 .social-wrapper {
