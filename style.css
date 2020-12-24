@@ -187,6 +187,9 @@ body {
 }
 
 @media (max-width: 520px) {
+    #header-logo {
+        display: none;
+    }
     footer {
         padding: 1.5em 10vw !important;
     }
