@@ -47,7 +47,7 @@ body {
 
 .navbar-links li a {
     text-decoration: none;
-    color: #4a4a4a;
+    color: #3a2201;
     padding: 0.5rem 1rem;
     display: block;
 }
@@ -116,7 +116,7 @@ body {
 
 .header-text h1{
     margin: 0.5rem 0.5rem 0.5rem 0;
-    font-size: 84px;
+    font-size: 120px;
     font-family: 'Now', sans-serif;
     color: white;
     text-shadow: 3px 3px #ffe580, 5px 5px #ffe58085;
@@ -125,11 +125,74 @@ body {
 .header-text h2{
     margin: 0.5rem 0.5rem 0.5rem 0;
     margin-right: 0.5rem;
-    color: white;
+    color: #3a2201;
     font-family: 'Quicksand', sans-serif;
     font-size: 2em;
     font-weight: 600;
 }
+
+h3 {
+    text-align: center;
+    font-size: 42px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.squiggle-transition {
+    margin-top: -20vh;
+    width: 100%;
+    height: fit-content;
+}
+
+#squiggle {
+    width: 100%;
+    height: fit-content;
+}
+
+#about {
+    padding: 0 20vw;
+}
+#about p {
+    font-size: 20px;
+    text-align: center;
+}
+
+button {
+    font-family: inherit;
+}
+
+.collapsible {
+    background-color: transparent;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 24px;
+}
+
+.collap-active, .collapsible:hover {
+    /*placeholder, will use this as animation*/
+    background-color: transparent;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.collapsible:after {
+    content: '\25B6'; 
+    font-size: 13px;
+    color: black;
+    margin-left: 5px;
+  }
+  
+  .collap-active:after {
+    content: "\25BC"; 
+  }
 
 @media (max-width: 800px) {
     .toggle-button {
@@ -171,14 +234,15 @@ body {
         text-decoration: underline;
         background-color: transparent;
     }
-    .social-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1250px) {
+    .header-text h1{
+        font-size: 96px;
+    }
+}
+    
+@media (max-width: 1000px) {
     .social-wrapper {
         display: flex;
         flex-direction: column;
