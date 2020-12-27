@@ -91,7 +91,7 @@ body {
     border-radius: 10px;
 }
 
-.page-header {
+#home {
     background-color: #C6F0F4;
     display: flex;
     justify-content: center;
@@ -353,6 +353,9 @@ hr {
 }
 
 @media (max-width: 480px) {
+    .header-text h1{
+        font-size: 72px;
+    }
     .social-buttons {
         padding: 0.1rem;
     }
@@ -384,4 +387,5 @@ hr {
     #nav-logo {
         content: url(images/citroicon.png);
     }
+    
 }
