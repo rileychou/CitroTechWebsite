@@ -149,6 +149,7 @@ h3 {
 }
 
 #about {
+    color: #3a2201;
     padding: 0 20vw;
 }
 #about p {
@@ -162,7 +163,7 @@ button {
 
 .collapsible {
     background-color: transparent;
-    color: #444;
+    color: #3a2201;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -300,9 +301,9 @@ footer {
 }
 
 .social-buttons {
-    color: white;
     padding: 0.5rem;
     text-align: center;
+    color: white;
 }
 
 .social-buttons:hover {
@@ -311,29 +312,29 @@ footer {
 
 .fa-linkedin-in {
     background: #007bb5;
+    text-align: center;
     padding: 1rem;
-    margin: 0.5rem;
     border-radius: 50%;
 }
 
 .fa-instagram {
-    background: #E1306C;
+    background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    text-align: center;
     padding: 1rem;
-    margin: 0.5rem;
     border-radius: 50%;
 }
 
 .fa-youtube {
     background: #bb0000;
+    text-align: center;
     padding: 1rem;
-    margin: 0.5rem;
     border-radius: 50%;
 }
 
 .fa-envelope {
     background: #dd4b39;
+    text-align: center;
     padding: 1rem;
-    margin: 0.5rem;
     border-radius: 50%;
 }
 
@@ -387,5 +388,20 @@ hr {
     #nav-logo {
         content: url(images/citroicon.png);
     }
-    
+}
+
+@media (min-height: 900px) {
+    .squiggle-transition {
+        margin-top: -15vh;
+        width: 100%;
+        height: fit-content;
+    }
+}
+
+@media (min-height: 1200px) {
+    .squiggle-transition {
+        margin-top: -10vh;
+        width: 100%;
+        height: fit-content;
+    }
 }
