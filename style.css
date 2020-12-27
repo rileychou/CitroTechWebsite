@@ -11,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'now', sans-serif;
+    color: #3a2201;
 }
 
 .navbar {
@@ -21,9 +22,9 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #ffe580;
-    color: #4a4a4a;
     align-items: center;
     padding: 0 10vw;
+    color: #3a2201;
 }
 
 .logo {
@@ -46,15 +47,14 @@ body {
 }
 
 .navbar-links li a {
-    text-decoration: none;
     color: #3a2201;
+    text-decoration: none;
     padding: 0.5rem 1rem;
     display: block;
 }
 
 .navbar-links li:hover {
     text-decoration: underline;
-    color: #4a4a4a;
 }
 
 #news-btn {
@@ -125,7 +125,6 @@ body {
 .header-text h2{
     margin: 0.5rem 0.5rem 0.5rem 0;
     margin-right: 0.5rem;
-    color: #3a2201;
     font-family: 'Quicksand', sans-serif;
     font-size: 2em;
     font-weight: 600;
@@ -149,7 +148,6 @@ h3 {
 }
 
 #about {
-    color: #3a2201;
     padding: 0 20vw;
 }
 #about p {
@@ -159,11 +157,11 @@ h3 {
 
 button {
     font-family: inherit;
+    color: inherit;
 }
 
 .collapsible {
     background-color: transparent;
-    color: #3a2201;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -187,13 +185,56 @@ button {
 .collapsible:after {
     content: '\25B6'; 
     font-size: 13px;
-    color: black;
+    color: #3a2201;;
     margin-left: 5px;
-  }
+}
   
-  .collap-active:after {
+.collap-active:after {
     content: "\25BC"; 
-  }
+}
+
+#team {
+    padding: 0 20vw;
+    margin-bottom: 5vh;
+}
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(14rem, 1fr));
+    grid-gap: 1em;
+}
+@media (max-width: 1200px){
+    .team-grid {
+        grid-template-columns: repeat(2, minmax(14rem, 1fr));
+    }
+}
+@media (max-width: 800px){
+    .team-grid {
+        grid-template-columns: repeat(1, minmax(14rem, 1fr));
+    }
+}
+
+.team-grid h4 {
+    font-size: 24px;
+}
+.team-grid h5 {
+    font-size: 16px;
+}
+.team-member {
+   text-align: center;
+}
+
+.team-member img {
+    width: 14rem;
+    height: auto;
+    border-radius: 50%;
+}
+
+.team-social {
+    font-size: 24px;
+    margin: 0.25rem;
+    text-decoration: none;
+    color: inherit;
+}
 
 @media (max-width: 800px) {
     .toggle-button {
@@ -264,19 +305,19 @@ button {
     .social-links {
         font-size: 1rem ;
     }
-    .fa-linkedin-in {
+    .social-buttons .fa-linkedin-in {
         padding: 0.8rem ;
     }
     
-    .fa-instagram {
+    .social-buttons .fa-instagram {
         padding: 0.8rem ;
     }
     
-    .fa-youtube {
+    .social-buttons .fa-youtube {
         padding: 0.8rem ;
     }
     
-    .fa-envelope {
+    .social-buttons .fa-envelope {
         padding: 0.8rem ;
     }
     #foot-logo {
@@ -310,28 +351,28 @@ footer {
     opacity: 0.8;
 }
 
-.fa-linkedin-in {
+.social-buttons .fa-linkedin-in {
     background: #007bb5;
     text-align: center;
     padding: 1rem;
     border-radius: 50%;
 }
 
-.fa-instagram {
+.social-buttons .fa-instagram {
     background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     text-align: center;
     padding: 1rem;
     border-radius: 50%;
 }
 
-.fa-youtube {
+.social-buttons .fa-youtube {
     background: #bb0000;
     text-align: center;
     padding: 1rem;
     border-radius: 50%;
 }
 
-.fa-envelope {
+.social-buttons .fa-envelope {
     background: #dd4b39;
     text-align: center;
     padding: 1rem;
@@ -363,19 +404,19 @@ hr {
     .social-links {
         font-size: 1rem;
     }
-    .fa-linkedin-in {
+    .social-buttons .fa-linkedin-in {
         padding: 0.8rem;
     }
     
-    .fa-instagram {
+    .social-buttons .fa-instagram {
         padding: 0.8rem;
     }
     
-    .fa-youtube {
+    .social-buttons .fa-youtube {
         padding: 0.8rem;
     }
     
-    .fa-envelope {
+    .social-buttons .fa-envelope {
         padding: 0.8rem;
     }
     #foot-logo {
