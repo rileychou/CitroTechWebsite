@@ -62,14 +62,14 @@ body {
 }
 
 #news-btn a{
-    background-color: pink;
+    background-color: #F8D0E9;
     border-radius: 24px;
     transition: 0.2s;
 }
 
 #news-btn a:hover {
     text-decoration: none;
-    background-color: orchid;
+    background-color: #D5BFFF;
     border-radius: 24px;
 }
 
@@ -332,7 +332,7 @@ button {
 }
 
 footer {
-    background-color: pink;
+    background-color: #F8D0E9;
     padding: 1.5em 15vw;
 }
 
@@ -364,7 +364,7 @@ footer {
 }
 
 .social-buttons .fa-instagram {
-    background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: #E1306C;
     text-align: center;
     padding: 1rem;
     border-radius: 50%;
