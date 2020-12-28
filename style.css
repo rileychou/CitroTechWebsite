@@ -140,11 +140,14 @@ h3 {
     margin-top: -20vh;
     width: 100%;
     height: fit-content;
+    overflow: hidden;
+    direction: rtl;
 }
 
 #squiggle {
     width: 100%;
     height: fit-content;
+    min-width: 800px;
 }
 
 #about {
@@ -194,13 +197,13 @@ button {
 }
 
 #team {
-    padding: 0 20vw;
+    padding: 0 15vw;
     margin-bottom: 5vh;
 }
 .team-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(14rem, 1fr));
-    grid-gap: 1em;
+    grid-gap: 2em 1em;
 }
 @media (max-width: 1200px){
     .team-grid {
