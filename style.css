@@ -106,12 +106,26 @@ body {
     align-items: center;
     padding-right: 4rem;
 }
-
 #header-logo {
     width: 300px;
     height: auto;
     border-radius: 50%;
     border: 4px solid #EEE;
+    animation-name: biglogo;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes biglogo {
+    from {
+        transform: rotate(0deg) scale(0.1);
+        opacity: 0.1;
+    } 
+    to {
+        transform: rotate(360deg) scale(1);
+        opacity: 1;
+    }
 }
 
 .header-text h1{
@@ -120,6 +134,10 @@ body {
     font-family: 'Now', sans-serif;
     color: white;
     text-shadow: 3px 3px #ffe580, 5px 5px #ffe58085;
+    animation-name: title;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
 }
 
 .header-text h2{
@@ -128,6 +146,31 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-size: 2em;
     font-weight: 600;
+    animation-name: subtitle;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+@keyframes title {
+    0% {
+        transform: translateX(60%);
+        opacity: 0.1;
+    } 
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@keyframes subtitle {
+    0% {
+        transform: translateX(50%);
+        opacity: 0.1;
+    } 
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }
 
 h3 {
