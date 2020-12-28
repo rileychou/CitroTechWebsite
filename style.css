@@ -230,6 +230,8 @@ button {
     width: 14rem;
     height: auto;
     border-radius: 50%;
+    border: 5px solid #ffe580;
+    box-shadow: 1px 1px 4px #3a220136;
 }
 
 .team-social {
