@@ -368,6 +368,7 @@ button {
         border-radius: 24px;
         margin: 10px;
         font-size: 18px;
+        line-height: 32px;
     }
     .collapsible span{
         background-color: transparent;
@@ -375,9 +376,6 @@ button {
     }
     .collapsible span:hover {
         background-color: transparent;
-    }
-    #easypeasy {
-        line-height: 32px;
     }
     .collap-active, .collapsible:hover {
         /*placeholder, will use this as animation*/
