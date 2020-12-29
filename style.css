@@ -258,7 +258,7 @@ button {
     grid-gap: 2em 1em;
 }
 
-@media (min-width: 2000px){
+@media (min-width: 1600px){
     .team-grid {
         grid-template-columns: repeat(4, minmax(14rem, 1fr));
     }
