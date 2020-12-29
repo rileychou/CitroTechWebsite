@@ -371,6 +371,7 @@ button {
     }
     .collapsible span{
         background-color: transparent;
+        padding: 0px;
     }
     .collapsible span:hover {
         background-color: transparent;
