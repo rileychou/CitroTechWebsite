@@ -372,6 +372,9 @@ button {
     .collapsible span{
         background-color: transparent;
     }
+    .collapsible span:hover {
+        background-color: transparent;
+    }
     #easypeasy {
         line-height: 32px;
     }
