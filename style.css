@@ -25,6 +25,7 @@ body {
     align-items: center;
     padding: 0 10vw;
     color: #3a2201;
+    z-index: 10;
 }
 
 .logo {
@@ -214,12 +215,19 @@ button {
     border: none;
     text-align: center;
     outline: none;
-    font-size: 24px;
+    font-size: 20px;
+    position: relative;
+}
+.collapsible span {
+    background-color: #F8D0E9;
+    padding: 8px;
+    transition: 0.2s;
+    border-radius: 20px;
 }
 
-.collap-active, .collapsible:hover {
+.collap-active span, .collapsible:hover span {
     /*placeholder, will use this as animation*/
-    background-color: transparent;
+    background-color: #D5BFFF;
 }
 
 .content {
@@ -228,20 +236,21 @@ button {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
-.collapsible:after {
+.collapsible span:after {
     content: '\25B6'; 
     font-size: 13px;
     color: #3a2201;;
     margin-left: 5px;
 }
   
-.collap-active:after {
+.collap-active span:after {
     content: "\25BC"; 
 }
 
 #team {
     padding: 0 15vw;
     margin-bottom: 5vh;
+    position: relative;
 }
 .team-grid {
     display: grid;
@@ -266,7 +275,7 @@ button {
     font-size: 16px;
 }
 .team-member {
-   text-align: center;
+    text-align: center;
 }
 
 .team-member img {
@@ -283,6 +292,28 @@ button {
     text-decoration: none;
     color: inherit;
 }
+
+/*.animate-on-scroll{
+    opacity: 1;
+}*/
+.animate-on-scroll.is-visible {
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 @media (max-width: 800px) {
     .toggle-button {
