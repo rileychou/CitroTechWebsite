@@ -297,6 +297,12 @@ button {
     margin: 0.25rem;
     text-decoration: none;
     color: inherit;
+    transition: transform 0.25s;
+    display: inline-block;
+}
+
+.team-social:hover {
+    transform: scale(1.15);
 }
 
 /*.animate-on-scroll{
