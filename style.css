@@ -403,7 +403,10 @@ button {
     }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 560px) {
+    .header-text h1{
+        font-size: 70px;
+    }
     #header-logo {
         display: none;
     }
@@ -429,6 +432,9 @@ button {
     }
     
     .social-buttons .fa-envelope {
+        padding: 0.8rem ;
+    }
+    .social-buttons .fa-link {
         padding: 0.8rem ;
     }
     #foot-logo {
@@ -512,38 +518,16 @@ hr {
     text-align: center;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 530px) {
     .header-text h1{
-        font-size: 72px;
+        font-size: 60px;
     }
-    .social-buttons {
-        padding: 0.1rem;
-    }
-    .social-links {
-        font-size: 1rem;
-    }
-    .social-buttons .fa-linkedin-in {
-        padding: 0.8rem;
-    }
-    
-    .social-buttons .fa-instagram {
-        padding: 0.8rem;
-    }
-    
-    .social-buttons .fa-youtube {
-        padding: 0.8rem;
-    }
-    
-    .social-buttons .fa-envelope {
-        padding: 0.8rem;
-    }
-    #foot-logo {
-        width: auto;
-        height: 3rem;
+    .header-text h2{
+        font-size: 1.5em;
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 376px) {
     #nav-logo {
         content: url(images/citroicon.png);
     }
