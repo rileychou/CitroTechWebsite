@@ -490,6 +490,13 @@ footer {
     border-radius: 50%;
 }
 
+.social-buttons .fa-link {
+    background: #39E09B;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
 #foot-logo {
     width: auto;
     height: 4.5rem;
