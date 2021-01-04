@@ -403,46 +403,6 @@ button {
     }
 }
 
-@media (max-width: 560px) {
-    .header-text h1{
-        font-size: 70px;
-    }
-    #header-logo {
-        display: none;
-    }
-    footer {
-        padding: 1.5em 10vw !important;
-    }
-    .social-buttons {
-        padding: 0.1rem ;
-    }
-    .social-links {
-        font-size: 1rem ;
-    }
-    .social-buttons .fa-linkedin-in {
-        padding: 0.8rem ;
-    }
-    
-    .social-buttons .fa-instagram {
-        padding: 0.8rem ;
-    }
-    
-    .social-buttons .fa-youtube {
-        padding: 0.8rem ;
-    }
-    
-    .social-buttons .fa-envelope {
-        padding: 0.8rem ;
-    }
-    .social-buttons .fa-link {
-        padding: 0.8rem ;
-    }
-    #foot-logo {
-        width: auto;
-        height: 3rem ;
-    }
-}
-
 footer {
     background-color: #F8D0E9;
     padding: 1.5em 15vw;
@@ -516,6 +476,46 @@ hr {
 
 .copyright {
     text-align: center;
+}
+
+@media (max-width: 560px) {
+    .header-text h1{
+        font-size: 70px;
+    }
+    #header-logo {
+        display: none;
+    }
+    footer {
+        padding: 1.5em 10vw !important;
+    }
+    .social-buttons {
+        padding: 0.1rem ;
+    }
+    .social-links {
+        font-size: 1rem ;
+    }
+    .social-buttons .fa-linkedin-in {
+        padding: 0.8rem ;
+    }
+    
+    .social-buttons .fa-instagram {
+        padding: 0.8rem ;
+    }
+    
+    .social-buttons .fa-youtube {
+        padding: 0.8rem ;
+    }
+    
+    .social-buttons .fa-envelope {
+        padding: 0.8rem ;
+    }
+    .social-buttons .fa-link {
+        padding: 0.8rem ;
+    }
+    #foot-logo {
+        width: auto;
+        height: 3rem ;
+    }
 }
 
 @media (max-width: 530px) {
