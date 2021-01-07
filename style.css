@@ -258,7 +258,7 @@ button {
 }
 
 #faq .collapsible {
-    background-color: #F8D0E9;
+    background-color: #D5BFFF;
     padding: 6px;
     transition: 0.2s;
     border-radius: 24px;
@@ -274,7 +274,7 @@ button {
     background-color: transparent;
 }
 #faq .collap-active, .collapsible:hover {
-    background-color: #D5BFFF;
+    background-color: #C6F0F4;
 }
 #team {
     padding: 0 15vw;
