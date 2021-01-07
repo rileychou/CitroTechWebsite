@@ -247,6 +247,35 @@ button {
     content: "\25BC"; 
 }
 
+#faq {
+    padding: 0 10vw;
+}
+#faq .collapsible-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(8rem, 1fr));
+    grid-gap: 1em 3em;
+    text-align: center;
+}
+
+#faq .collapsible {
+    background-color: #F8D0E9;
+    padding: 6px;
+    transition: 0.2s;
+    border-radius: 24px;
+    margin: 10px;
+    font-size: 18px;
+    line-height: 32px;
+}
+#faq .collapsible span{
+    background-color: transparent;
+    padding: 0px;
+}
+#faq .collapsible span:hover {
+    background-color: transparent;
+}
+#faq .collap-active, .collapsible:hover {
+    background-color: #D5BFFF;
+}
 #team {
     padding: 0 15vw;
     margin-bottom: 5vh;
@@ -396,6 +425,15 @@ button {
 }
     
 @media (max-width: 1000px) {
+    #faq {
+        padding: 0 20vw;
+    }
+    #faq .collapsible-grid {
+        grid-template-columns: repeat(1, minmax(8rem, 1fr));
+    }
+    #faq .collapsible {
+        max-width: 400px;
+    }
     .social-wrapper {
         display: flex;
         flex-direction: column;
