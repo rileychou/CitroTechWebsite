@@ -253,7 +253,7 @@ button {
 #faq .collapsible-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(8rem, 1fr));
-    grid-gap: 1em 3em;
+    grid-gap: 0.5em 3em;
     text-align: center;
 }
 
