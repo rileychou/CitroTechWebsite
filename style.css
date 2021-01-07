@@ -180,6 +180,10 @@ h3 {
     font-family: 'Quicksand', sans-serif;
 }
 
+p {
+    text-align: center;
+}
+
 .squiggle-transition {
     margin-top: -20vh;
     width: 100%;
@@ -201,7 +205,13 @@ h3 {
     font-size: 20px;
     text-align: center;
 }
-
+#info-links {
+    display: flex;
+    justify-content: space-around;
+}
+h5 {
+    font-size: 28px;
+}
 button {
     font-family: inherit;
     color: inherit;
@@ -356,7 +366,7 @@ button {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .toggle-button {
         display: flex;
     }
@@ -396,6 +406,8 @@ button {
         text-decoration: underline;
         background-color: transparent;
     }
+}
+@media (max-width: 800px) {
     .collapsible {
         background-color: #F8D0E9;
         padding: 6px;
