@@ -286,37 +286,48 @@ button {
 #faq .collap-active, .collapsible:hover {
     background-color: #C6F0F4;
 }
-#team {
+#sponsors {
     padding: 0 15vw;
+    position: relative;
+}
+.sponsor-div {
+    width: 14rem;
+}
+.sponsor-div img {
+    width: 100%;
+}
+#team {
+    padding: 0 10vw;
     margin-bottom: 5vh;
     position: relative;
 }
-.team-grid {
+.grid-container {
     display: grid;
     grid-template-columns: repeat(3, minmax(14rem, 1fr));
     grid-gap: 2em 1em;
+    justify-items: center;
 }
 
 @media (min-width: 1600px){
-    .team-grid {
+    .grid-container {
         grid-template-columns: repeat(4, minmax(14rem, 1fr));
     }
 }
 @media (max-width: 1200px){
-    .team-grid {
+    .grid-container {
         grid-template-columns: repeat(2, minmax(14rem, 1fr));
     }
 }
 @media (max-width: 800px){
-    .team-grid {
+    .grid-container {
         grid-template-columns: repeat(1, minmax(14rem, 1fr));
     }
 }
 
-.team-grid h4 {
+.grid-container h4 {
     font-size: 24px;
 }
-.team-grid h5 {
+.grid-container h5 {
     font-size: 16px;
 }
 .team-member {
