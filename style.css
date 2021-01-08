@@ -206,9 +206,15 @@ p {
     text-align: center;
 }
 #info-links {
+    text-align: center;
     display: flex;
     justify-content: space-around;
 }
+
+#info-links h5 {
+    margin: 0.5em;
+}
+
 h5 {
     font-size: 28px;
 }
@@ -291,11 +297,16 @@ button {
     position: relative;
 }
 .sponsor-div {
-    width: 14rem;
+    width: 16rem;
 }
 .sponsor-div img {
     width: 100%;
 }
+#volunteers {
+    padding: 0 10vw;
+    position: relative;
+}
+
 #team {
     padding: 0 10vw;
     margin-bottom: 5vh;
@@ -436,8 +447,11 @@ button {
         background-color: transparent;
     }
     .collap-active, .collapsible:hover {
-        /*placeholder, will use this as animation*/
         background-color: #D5BFFF;
+    }
+    #info-links {
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
