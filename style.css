@@ -223,6 +223,24 @@ p {
 h5 {
     font-size: 28px;
 }
+
+#schedule {
+    padding: 0 20vw;
+}
+
+table {
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+th, td {
+    padding: 16px;
+}
+
+th {
+    background-color: #C6F0F4;
+}
+
 button {
     font-family: inherit;
     color: inherit;
@@ -505,7 +523,7 @@ footer {
 .social-buttons {
     padding: 0.5rem;
     text-align: center;
-    color: white;
+    color: white !important;
 }
 
 .social-buttons:hover {
