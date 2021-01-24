@@ -92,6 +92,11 @@ body {
     border-radius: 10px;
 }
 
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
 #home {
     background-color: #C6F0F4;
     display: flex;
@@ -295,6 +300,10 @@ button {
 #sponsors {
     padding: 0 15vw;
     position: relative;
+}
+
+#sponsors p {
+    padding-bottom: 1.5em;
 }
 .sponsor-div {
     width: 16rem;
