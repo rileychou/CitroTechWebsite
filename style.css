@@ -236,11 +236,13 @@ table {
     padding: 0;
     width: 100%;
     max-width: 900px;
+    box-shadow: 0px 5px 20px 1px #AAAAAA;
 }
 
 th, td {
     text-align: center;
-    padding: 16px;
+    padding: 12px;
+    font-size: 18px;
 }
 
 th {
@@ -291,7 +293,6 @@ button {
 }
 
 .collap-active span, .collapsible span:hover {
-    /*placeholder, will use this as animation*/
     background-color: #D5BFFF;
 }
 
@@ -338,11 +339,11 @@ button {
 #faq .collapsible span:hover {
     background-color: transparent;
 }
-#faq .collap-active, .collapsible:hover {
+#faq .collap-active {
     background-color: #C6F0F4;
 }
 #sponsors {
-    padding: 0 15vw;
+    padding: 0 10vw;
     position: relative;
 }
 
@@ -370,6 +371,7 @@ button {
     grid-template-columns: repeat(3, minmax(14rem, 1fr));
     grid-gap: 2em 1em;
     justify-items: center;
+    align-items: center;
 }
 
 @media (min-width: 1600px){
