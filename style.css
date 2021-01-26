@@ -262,11 +262,11 @@ th, td {
 
 th {
     max-width: 33%;
-    background-color: #C6F0F4;
+    background-color: #bae8dc;
 }
 
 td {
-    background-color: #F8D0E9;
+    background-color: #f2feff;
 }
 
 th:first-child {
