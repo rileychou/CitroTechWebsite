@@ -92,8 +92,11 @@ body {
     border-radius: 10px;
 }
 
-a:visited {
+a {
     text-decoration: none;
+    color: inherit;
+}
+a:visited {
     color: inherit;
 }
 
@@ -379,6 +382,10 @@ button {
 #volunteers {
     padding: 0 10vw;
     position: relative;
+}
+
+#volunteers p {
+    padding-bottom: 1.5em;
 }
 
 #team {
