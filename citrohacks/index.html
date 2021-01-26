@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
         name="viewport" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="description" content="Citro Hacks is an online hackathon where high schoolers can come together and build cool projects, learn new skills, and win free swag!">
+    <meta name="description"
+        content="Citro Hacks is an online hackathon where high schoolers can come together and build cool projects, learn new skills, and win free swag!">
     <meta name="author" content="Citro Tech">
     <meta name="theme-color" content="#FFDA43">
     <!--open graph meta tags-->
@@ -17,11 +18,13 @@
     <meta property="og:url" content="https://citrotech.netlify.app/citrohacks/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Citro Hacks">
-    <meta property="og:description" content="Citro Hacks is an online hackathon where high schoolers can come together and build cool projects, learn new skills, and win free swag!">
+    <meta property="og:description"
+        content="Citro Hacks is an online hackathon where high schoolers can come together and build cool projects, learn new skills, and win free swag!">
     <meta property="og:image" content="https://citrotech.netlify.app/images/Citro_Tech_Banner_1.png">
     <!--twitter meta tags-->
     <meta property="twitter:site" content="Citro Hacks">
-    <meta property="twitter:text:title" content="Citro Hacks is an online hackathon where high schoolers can come together and build cool projects, learn new skills, and win free swag!">
+    <meta property="twitter:text:title"
+        content="Citro Hacks is an online hackathon where high schoolers can come together and build cool projects, learn new skills, and win free swag!">
     <meta property="twitter:image" content="https://citrotech.netlify.app/images/Citro_Tech_Banner_1.png">
     <meta property="twitter:card" content="summary_large_image">
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -82,7 +85,8 @@
         <h3>About</h3>
         <p>
             Citro Hacks is an all-inclusive online hackathon organized by <a href="https://citrotech.netlify.app/">Citro
-                Tech</a>, a student led organization dedicated to empowering minorities in the tech field. We want to provide a valuable experience for both beginners and advanced coders alike. We have
+                Tech</a>, a student led organization dedicated to empowering minorities in the tech field. We want to
+            provide a valuable experience for both beginners and advanced coders alike. We have
             plenty of swag, workshops, and games for attendees to enjoy at no cost. Join us to meet new friends, network
             with computer science professionals, and build something awesome!
         </p>
@@ -94,33 +98,81 @@
     </section>
     <section id="schedule">
         <h3>Schedule</h3>
-        <p>these times are just hypothetical because our website is still under construction</p>
-        <table>
-            <tr>
-                <th>Time</th>
-                <th>Event</th>
-            </tr>
-            <tr>
-                <td>10:00 AM</td>
-                <td>Opening Ceremony</td>
-            </tr>
-            <tr>
-                <td>11:00 AM</td>
-                <td>Team Mixer</td>
-            </tr>
-            <tr>
-                <td>1:00 PM</td>
-                <td>Workshop (tbd)</td>
-            </tr>
-            <tr>
-                <td>4:00 PM</td>
-                <td>Guest speaker (tbd)</td>
-            </tr>
-            <tr>
-                <td>10:00 PM</td>
-                <td>Game night (tbd)</td>
-            </tr>
-        </table>
+        <p>these times are unofficial, our website is still under construction</p>
+        
+        <div class="schedule-slides">
+            <div class="schedule-title">
+                <span class="scrollbuttons" onclick="plusDivs(-1)">&#10094</span>
+                <h2>Saturday, June 26</h2>
+                <span class="scrollbuttons" onclick="plusDivs(+1)">&#10095</span>
+            </div>
+            <table>
+                <tr>
+                    <th>Time</th>
+                    <th>Event</th>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>Opening Ceremony</td>
+                </tr>
+                <tr>
+                    <td>11:00 AM</td>
+                    <td>Team Mixer</td>
+                </tr>
+                <tr>
+                    <td>1:00 PM</td>
+                    <td>Workshop (tbd)</td>
+                </tr>
+                <tr>
+                    <td>4:00 PM</td>
+                    <td>Guest speaker (tbd)</td>
+                </tr>
+                <tr>
+                    <td>10:00 PM</td>
+                    <td>Game night (tbd)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="schedule-slides">
+            <div class="schedule-title">
+                <span class="scrollbuttons" onclick="plusDivs(-1)">&#10094</span>
+                <h2>Sunday, June 27</h2>
+                <span class="scrollbuttons" onclick="plusDivs(+1)">&#10095</span>
+            </div>
+            <table>
+                <tr>
+                    <th>Time</th>
+                    <th>Event</th>
+                </tr>
+                <tr>
+                    <td>8:00 AM</td>
+                    <td>Submissions due + Judging begins</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>Closing Ceremony</td>
+                </tr>
+            </table>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("schedule-slides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
     </section>
     <section id="prizes">
         <h3>Prizes</h3>
@@ -130,64 +182,82 @@
         <h3>FAQ</h3>
         <div class="collapsible-grid">
             <div class="collapsible-container">
-                <button type="button" class="collapsible animate-on-scroll"><span>🍋 What is a Hackathon?</span></button>
+                <button type="button" class="collapsible animate-on-scroll"><span>🍋 What is a
+                        Hackathon?</span></button>
                 <div class="content">
-                    <p>A hackathon is an event where many programmers gather up for a couple hours to collaborate on a project, network with people, get free stuff, and have fun!</p>
+                    <p>A hackathon is an event where many programmers gather up for a couple hours to collaborate on a
+                        project, network with people, get free stuff, and have fun!</p>
                 </div>
             </div>
             <div class="collapsible-container">
-                <button type="button" class="collapsible animate-on-scroll"><span>🍋 Who can participate?</span></button>
+                <button type="button" class="collapsible animate-on-scroll"><span>🍋 Who can
+                        participate?</span></button>
                 <div class="content">
-                    <p>Citro Hacks is open to all high schoolers from grades 9 through 12 and recently graduated seniors. If you are in college or beyond, you can register as a mentor!</p>
+                    <p>Citro Hacks is open to all high schoolers from grades 9 through 12 and recently graduated
+                        seniors. If you are in college or beyond, you can register as a mentor!</p>
                 </div>
             </div>
             <div class="collapsible-container">
                 <button type="button" class="collapsible animate-on-scroll"><span>🍋 What do I need?</span></button>
                 <div class="content">
-                    <p>All you need is a computer,  an internet connection, and curiosity! It'd be helpful to have some food and a comfortable workspace too.</p>
+                    <p>All you need is a computer, an internet connection, and curiosity! It'd be helpful to have some
+                        food and a comfortable workspace too.</p>
                 </div>
             </div>
             <div class="collapsible-container">
-                <button type="button" class="collapsible animate-on-scroll"><span>🍋 Is Citro Hacks free?</span></button>
+                <button type="button" class="collapsible animate-on-scroll"><span>🍋 Is Citro Hacks
+                        free?</span></button>
                 <div class="content">
-                    <p>Citro Hacks is <strong>100% Free!</strong> Thanks to our generous sponsors, we are able to cover all costs for swag and shipping.</p>
+                    <p>Citro Hacks is <strong>100% Free!</strong> Thanks to our generous sponsors, we are able to cover
+                        all costs for swag and shipping.</p>
                 </div>
             </div>
             <div class="collapsible-container">
-                <button type="button" class="collapsible animate-on-scroll"><span>🍋 What if I can't code?</span></button>
+                <button type="button" class="collapsible animate-on-scroll"><span>🍋 What if I can't
+                        code?</span></button>
                 <div class="content">
-                    <p>Don't worry! We have plenty of beginner-friendly workshops lined up to help you build your first app/website! Plus, our mentors will be active in our Discord server, helping everyone out.</p>
+                    <p>Don't worry! We have plenty of beginner-friendly workshops lined up to help you build your first
+                        app/website! Plus, our mentors will be active in our Discord server, helping everyone out.</p>
                 </div>
             </div>
             <div class="collapsible-container">
                 <button type="button" class="collapsible animate-on-scroll"><span>🍋 Do I need a team?</span></button>
                 <div class="content">
-                    <p>You may form a team with up to 4 members, but going solo is cool too! You can message our #find-a-team channel in our Discord server, and we'll also host an team mixer after the opening ceremony!</p>
+                    <p>You may form a team with up to 4 members, but going solo is cool too! You can message our
+                        #find-a-team channel in our Discord server, and we'll also host an team mixer after the opening
+                        ceremony!</p>
                 </div>
             </div>
             <div class="collapsible-container">
-                <button type="button" class="collapsible animate-on-scroll"><span>🍋 Sweet! How do I sign up?</span></button>
+                <button type="button" class="collapsible animate-on-scroll"><span>🍋 Sweet! How do I sign
+                        up?</span></button>
                 <div class="content">
-                    <p>Fill out the signup form to register, Join our Discord server so you don't miss any announcements, and Join the Devpost to submit your project!</p>
+                    <p>Fill out the signup form to register, Join our Discord server so you don't miss any
+                        announcements, and Join the Devpost to submit your project!</p>
                 </div>
             </div>
             <div class="collapsible-container">
-                <button type="button" class="collapsible animate-on-scroll"><span>🍋 I have another question...</span></button>
+                <button type="button" class="collapsible animate-on-scroll"><span>🍋 I have another
+                        question...</span></button>
                 <div class="content">
-                    <p>We will gladly answer any questions you have! You can contact us <a href="mailto:teamcitrotech@gmail.com" target="_blank">here.</a></p>
+                    <p>We will gladly answer any questions you have! You can contact us <a
+                            href="mailto:teamcitrotech@gmail.com" target="_blank">here.</a></p>
                 </div>
             </div>
         </div>
     </section>
     <section id="sponsors">
         <h3>Sponsors</h3>
-        <p>Interested in sponsoring our event? Check out our <a href="https://bit.ly/ct_sponsor" target="_blank"><b>sponsorship prospecteus</b></a> to learn more!</p>
+        <p>Interested in sponsoring our event? Check out our <a href="https://bit.ly/ct_sponsor"
+                target="_blank"><b>sponsorship prospecteus</b></a> to learn more!</p>
         <div class="grid-container">
             <div class="sponsor-div">
-                <a href="https://www.jetbrains.com/" target="_blank"><img src="../images/jetbrains-variant-4.png" alt="jetbrains"></a>
+                <a href="https://www.jetbrains.com/" target="_blank"><img src="../images/jetbrains-variant-4.png"
+                        alt="jetbrains"></a>
             </div>
             <div class="sponsor-div">
-                <a href="https://www.stickermule.com/" target="_blank"><img src="../images/stickermule.png" alt="stickermule"></a>
+                <a href="https://www.stickermule.com/" target="_blank"><img src="../images/stickermule.png"
+                        alt="stickermule"></a>
             </div>
             <div class="sponsor-div">
                 <img src="../images/citrologo.png" alt="">
@@ -241,8 +311,6 @@
                         class="fab fa-linkedin-in"></i></a>
                 <a class="team-social" href="https://github.com/rileychou" target="_blank"><i
                         class="fab fa-github"></i></a>
-                <a class="team-social" href="https://www.instagram.com/rollinriceballz/" target="_blank"><i
-                        class="fab fa-instagram"></i></a>
             </div>
             <div class="team-member animate-on-scroll">
                 <img src="../images/jane.jpg" alt="Jane">
@@ -288,6 +356,12 @@
                         class="fab fa-linkedin-in"></i></a>
                 <a class="team-social" href="https://www.instagram.com/_damiyang_/" target="_blank"><i
                         class="fab fa-instagram"></i></a>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="../images/ella.jpg" alt="Ella">
+                <h4>Ella Xu</h4>
+                <h5>Project Developer</h5>
+                <a class="team-social" href="https://github.com/eilla1" target="_blank"><i class="fab fa-github"></i></a>
             </div>
             <div class="team-member animate-on-scroll">
                 <img src="../images/sejal.jpg" alt="Sejal">
@@ -361,5 +435,4 @@
     <script src="../scripts/collapsible.js"></script>
     <script src="../scripts/animateOnScroll.js"></script>
 </body>
-
 </html>
