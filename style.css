@@ -228,7 +228,7 @@ h5 {
 }
 
 #schedule {
-    padding: 0 20vw;
+    padding: 0 10vw;
 }
 
 #schedule h2 {
@@ -238,6 +238,26 @@ h5 {
 
 #schedule span {
     font-size: 1.5em;
+}
+
+#sched-and-events {
+    display: flex;
+}
+
+#events-container {
+    margin-right: 2em;
+    flex-grow: 0.75;
+    flex-basis: 0;
+}
+
+.events-div {
+    display: none;
+}
+
+#schedule-container {
+    margin-left: 2em;
+    flex-grow: 1.25;
+    flex-basis: 0;
 }
 
 .schedule-title {
