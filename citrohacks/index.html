@@ -111,36 +111,51 @@
                     <h5 class="event-title">Team Mixer</h4>
                     <p>For those who need teammates, we got you covered! </p>
                 </div>
+                <div class="events-div">
+                    <h4 class="event-time">Saturday, 11:00 AM</h5>
+                    <h5 class="event-title">3</h4>
+                    <p>more info soon... </p>
+                </div>
+                <div class="events-div">
+                    <h4 class="event-time">Saturday, 11:00 AM</h5>
+                    <h5 class="event-title">4</h4>
+                    <p>more info soon... </p>
+                </div>
+                <div class="events-div">
+                    <h4 class="event-time">Saturday, 11:00 AM</h5>
+                    <h5 class="event-title">5</h4>
+                    <p>more info soon... </p>
+                </div>
             </div>
             <div id="schedule-container">
                 <div class="schedule-slides">
                     <div class="schedule-title">
-                        <span class="scrollbuttons" onclick="plusDivs(-1)">&#10094</span>
+                        <span class="scrollbuttons" onclick="plusDivs(-1, 1)">&#10094</span>
                         <h2>Saturday, June 26</h2>
-                        <span class="scrollbuttons" onclick="plusDivs(+1)">&#10095</span>
+                        <span class="scrollbuttons" onclick="plusDivs(+1, 1)">&#10095</span>
                     </div>
                     <table>
                         <tr>
                             <th>Time</th>
                             <th>Event</th>
                         </tr>
-                        <tr>
+                        <tr onclick="currentDiv(1, 0)">
                             <td>10:00 AM</td>
                             <td>Opening Ceremony</td>
                         </tr>
-                        <tr>
+                        <tr onclick="currentDiv(2, 0)">
                             <td>11:00 AM</td>
                             <td>Team Mixer</td>
                         </tr>
-                        <tr>
+                        <tr onclick="currentDiv(3, 0)">
                             <td>1:00 PM</td>
                             <td>Workshop (tbd)</td>
                         </tr>
-                        <tr>
+                        <tr onclick="currentDiv(4, 0)">
                             <td>4:00 PM</td>
                             <td>Guest speaker (tbd)</td>
                         </tr>
-                        <tr>
+                        <tr onclick="currentDiv(5, 0)">
                             <td>9:00 PM</td>
                             <td>Game night (tbd)</td>
                         </tr>
@@ -148,9 +163,9 @@
                 </div>
                 <div class="schedule-slides">
                     <div class="schedule-title">
-                        <span class="scrollbuttons" onclick="plusDivs(-1)">&#10094</span>
+                        <span class="scrollbuttons" onclick="plusDivs(-1, 1)">&#10094</span>
                         <h2>Sunday, June 27</h2>
-                        <span class="scrollbuttons" onclick="plusDivs(+1)">&#10095</span>
+                        <span class="scrollbuttons" onclick="plusDivs(+1, 1)">&#10095</span>
                     </div>
                     <table>
                         <tr>
@@ -171,25 +186,27 @@
         </div>
         
         <script>
-            var slideIndex = 1;
-            showDivs(slideIndex);
-
-            function plusDivs(n) {
-                showDivs(slideIndex += n);
+            var slideIndex = [1,1];
+            var slideId = ["events-div", "schedule-slides"];
+            showDivs(1, 0);
+            showDivs(1, 1);
+            
+            //n is the index within each slide deck, no is the index that selects which slide deck
+            function plusDivs(n, no) {
+                showDivs(slideIndex[no] += n, no);
             }
-            function currentDiv(n) {
-                showDivs(slideIndex = n);
+            function currentDiv(n, no) {
+                showDivs(slideIndex[no] = n, no);
             }
-
-            function showDivs(n) {
+            function showDivs(n, no) {
                 var i;
-                var x = document.getElementsByClassName("schedule-slides");
-                if (n > x.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = x.length }
+                var x = document.getElementsByClassName(slideId[no]);
+                if (n > x.length) { slideIndex[no] = 1 }
+                if (n < 1) { slideIndex[no] = x.length }
                 for (i = 0; i < x.length; i++) {
                     x[i].style.display = "none";
                 }
-                x[slideIndex - 1].style.display = "block";
+                x[slideIndex[no] - 1].style.display = "block";
             }
         </script>
     </section>
