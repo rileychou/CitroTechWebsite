@@ -126,6 +126,16 @@
                     <h5 class="event-title">5</h4>
                     <p>more info soon... </p>
                 </div>
+                <div class="events-div">
+                    <h4 class="event-time">Saturday, 11:00 AM</h5>
+                    <h5 class="event-title">6</h4>
+                    <p>more info soon... </p>
+                </div>
+                <div class="events-div">
+                    <h4 class="event-time">Saturday, 11:00 AM</h5>
+                    <h5 class="event-title">7</h4>
+                    <p>more info soon... </p>
+                </div>
             </div>
             <div id="schedule-container">
                 <div class="schedule-slides">
@@ -139,23 +149,23 @@
                             <th>Time</th>
                             <th>Event</th>
                         </tr>
-                        <tr onclick="currentDiv(1, 0)">
+                        <tr class="schedule-rows">
                             <td>10:00 AM</td>
                             <td>Opening Ceremony</td>
                         </tr>
-                        <tr onclick="currentDiv(2, 0)">
+                        <tr class="schedule-rows">
                             <td>11:00 AM</td>
                             <td>Team Mixer</td>
                         </tr>
-                        <tr onclick="currentDiv(3, 0)">
+                        <tr class="schedule-rows">
                             <td>1:00 PM</td>
                             <td>Workshop (tbd)</td>
                         </tr>
-                        <tr onclick="currentDiv(4, 0)">
+                        <tr class="schedule-rows">
                             <td>4:00 PM</td>
                             <td>Guest speaker (tbd)</td>
                         </tr>
-                        <tr onclick="currentDiv(5, 0)">
+                        <tr class="schedule-rows">
                             <td>9:00 PM</td>
                             <td>Game night (tbd)</td>
                         </tr>
@@ -172,11 +182,11 @@
                             <th>Time</th>
                             <th>Event</th>
                         </tr>
-                        <tr>
+                        <tr class="schedule-rows">
                             <td>8:00 AM</td>
                             <td>Submissions due + Judging begins</td>
                         </tr>
-                        <tr>
+                        <tr class="schedule-rows">
                             <td>10:00 AM - 10:30 AM</td>
                             <td>Closing Ceremony</td>
                         </tr>
@@ -190,6 +200,13 @@
             var slideId = ["events-div", "schedule-slides"];
             showDivs(1, 0);
             showDivs(1, 1);
+            
+            //jQuery
+            $(".schedule-rows").click(function(){
+                //gets index of row you clicked, then calls current div (this avoids hardcoding)
+                var eventsIndex = $(".schedule-rows").index(this);
+                currentDiv(eventsIndex+1, 0);
+            });
             
             //n is the index within each slide deck, no is the index that selects which slide deck
             function plusDivs(n, no) {
