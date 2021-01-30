@@ -298,15 +298,16 @@ th, td {
     text-align: center;
     padding: 12px;
     font-size: 18px;
+    line-height: 18px;
 }
 
 th {
-    max-width: 33%;
     background-color: #bae8dc;
 }
 
 td {
     background-color: #f2feff;
+    transition: all 0.5s ease;
 }
 
 th:first-child {
@@ -315,6 +316,11 @@ th:first-child {
 
 th:last-child {
     border-radius: 0 16px 0 0;
+}
+
+tr:hover td{
+    font-size: 19px;
+    background-color: #C6F0F4;
 }
 
 tr:last-child td:first-child {
