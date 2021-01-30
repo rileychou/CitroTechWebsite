@@ -221,9 +221,6 @@ p {
 
 #info-links h5 {
     margin: 0.5em;
-}
-
-h5 {
     font-size: 28px;
 }
 
@@ -246,17 +243,37 @@ h5 {
 
 #events-container {
     margin-right: 2em;
-    flex-grow: 0.75;
+    flex-grow: 1;
     flex-basis: 0;
+}
+
+@media(max-width: 1000px){
+    #events-container {
+        display: none;
+    }
 }
 
 .events-div {
     display: none;
+    text-align: center;
+    align-items: center;
+}
+
+.events-div h4 {
+
+}
+
+.events-div h5 {
+    
+}
+.events-div p {
+    margin: 0 auto;
+    max-width: 360px;
 }
 
 #schedule-container {
     margin-left: 2em;
-    flex-grow: 1.25;
+    flex-grow: 1;
     flex-basis: 0;
 }
 
