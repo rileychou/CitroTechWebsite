@@ -239,6 +239,7 @@ p {
 
 #sched-and-events {
     display: flex;
+    min-height: 330px;
 }
 
 #events-container {
@@ -256,7 +257,12 @@ p {
 .events-div {
     display: none;
     text-align: center;
-    align-items: center;
+    height: 100%;
+    background-position: center;
+    background-image: url('images/bigcloud.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 10%;
 }
 
 .events-div h4 {
@@ -268,7 +274,7 @@ p {
 }
 .events-div p {
     margin: 0 auto;
-    max-width: 360px;
+    max-width: 60%;
 }
 
 #schedule-container {
@@ -292,6 +298,8 @@ table {
     width: 100%;
     max-width: 900px;
     box-shadow: 0px 5px 20px 1px #AAAAAA;
+    -moz-box-shadow: 0px 5px 20px 1px #AAAAAA;
+    -webkit-box-shadow: 0px 5px 20px 1px #AAAAAA;
 }
 
 th, td {
