@@ -430,6 +430,19 @@ button {
 .sponsor-div img {
     width: 100%;
 }
+
+#hcb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+#hcb img {
+    width: 24em;
+    height: auto;
+}
+
 #volunteers {
     padding: 0 10vw;
     position: relative;
@@ -684,6 +697,11 @@ hr {
 
 .copyright {
     text-align: center;
+}
+
+.copyright p {
+    padding: 0;
+    margin: 0;
 }
 
 @media (max-width: 560px) {
