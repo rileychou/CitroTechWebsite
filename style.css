@@ -479,6 +479,10 @@ button {
     .grid-container {
         grid-template-columns: repeat(1, minmax(14rem, 1fr));
     }
+    #hcb img {
+        width: 18em;
+        height: auto;
+    }
 }
 
 .grid-container h4 {
