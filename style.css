@@ -261,6 +261,7 @@ p {
     background-position: center;
     background-image: url('images/bigcloud.png');
     background-size: contain;
+    background-position: center top;
     background-repeat: no-repeat;
     padding-top: 10%;
 }
