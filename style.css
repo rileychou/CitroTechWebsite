@@ -526,6 +526,9 @@ button {
     grid-template-columns: repeat(3, minmax(14rem, 1fr));
     grid-gap: 2em 1em;
     justify-items: center;
+}
+
+#sponsor-grid {
     align-items: center;
 }
 
