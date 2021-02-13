@@ -70,12 +70,27 @@
 
     </nav>
     <section id="home" class="page-header">
-        <div class="header-logo-container">
-            <img id="header-logo" src="../images/citro_logo_white.png">
-        </div>
         <div class="header-text">
             <h1>Citro Hacks</h1>
             <h2>An all-inclusive high school hackathon</h2>
+            <div class="time-container">
+                <img src="../images/calendar.svg">
+                <h2 class="times">June 26-27, 2021</h2>
+            </div>
+            <div class="time-container">
+                <img src="../images/clock.svg">
+                <h2 class="times" id="countdown"></h2>
+            </div>
+            
+            <div id="sign-up-buttons">
+                <div>Attendee Signup</div>
+                <div>Volunteer Signup</div>
+                <div>Discord</div>
+                <div>Devpost</div>
+            </div>
+        </div>
+        <div class="header-logo-container">
+            <img id="header-logo" src="../images/citro_logo_white.png">
         </div>
     </section>
     <section class="squiggle-transition">
@@ -355,13 +370,16 @@
                 href="mailto:teamcitrotech@gmail.com" target="_blank"><b>teamcitrotech@gmail.com</b></a>!</p>
         <div class="grid-container">
             <div class="sponsor-div">
-                <a href="https://balsamiq.com/" target="_blank"><img src="../images/balsamiq-logo-screen.svg" alt="balsamiq"></a>
+                <a href="https://www.makeschool.com/" target="_blank"><img src="../images/makeschool.png" alt="make school"></a>
+            </div>
+            <div class="sponsor-div">
+                <a href="https://balsamiq.com/" target="_blank"><img src="../images/balsamiq-logo-screen.png" alt="balsamiq"></a>
             </div>
             <div class="sponsor-div">
                 <a href="https://www.wolfram.com/" target="_blank"><img src="../images/wolfram-language-text-logo.png" alt="wolfram"></a>
             </div>
             <div class="sponsor-div">
-                <a href="https://www.jetbrains.com/" target="_blank"><img src="../images/jetbrains-variant-4.svg"
+                <a href="https://www.jetbrains.com/" target="_blank"><img src="../images/jetbrains-variant-4.png"
                         alt="jetbrains"></a>
             </div>
             <div class="sponsor-div">
@@ -371,7 +389,7 @@
                 <a href="https://repl.it/" target="_blank"><img src="../images/replit.svg" alt="repl.it"></a>
             </div>
             <div class="sponsor-div">
-                <img src="../images/RGB - Linode - Full - FC - BLK - Transparent.png" alt="Linode">
+                <a href="https://www.linode.com/" target="_blank"><img src="../images/RGB - Linode - Full - FC - BLK - Transparent.png" alt="Linode"></a>
             </div>
             <!--div class="sponsor-div">
                 <img src="../images/citrologo.png" alt="">
@@ -416,7 +434,7 @@
             <div class="team-member animate-on-scroll">
                 <img src="../images/riley.jpg" alt="Riley">
                 <h4>Riley Chou</h4>
-                <h5>Director of Technology</h5>
+                <h5>Tech & Sponsorships Director</h5>
                 <a class="team-social" href="https://www.linkedin.com/in/rileychou/" target="_blank"><i
                         class="fab fa-linkedin-in"></i></a>
                 <a class="team-social" href="https://github.com/rileychou" target="_blank"><i
@@ -472,15 +490,6 @@
                         class="fab fa-instagram"></i></a>
             </div>
             <div class="team-member animate-on-scroll">
-                <img src="../images/logan.png" alt="Logan">
-                <h4>Logan Silvers</h4>
-                <h5>Outreach</h5>
-                <a class="team-social" href="http://linkedin.com/in/loganrsilvers" target="_blank"><i
-                        class="fab fa-linkedin-in"></i></a>
-                <a class="team-social" href="https://www.instagram.com/1iglan/?igshid=13v90drirrmv6" target="_blank"><i
-                        class="fab fa-instagram"></i></a>
-            </div>
-            <div class="team-member animate-on-scroll">
                 <img src="../images/saloni.jpg" alt="Saloni">
                 <h4>Saloni Sivakumar</h4>
                 <h5>Outreach</h5>
@@ -519,6 +528,7 @@
     <script src="../scripts/collapsible.js"></script>
     <script src="../scripts/animateOnScroll.js"></script>
     <script src="../scripts/scheduleSlides.js"></script>
+    <script src="../scripts/countdown.js"></script>
 </body>
 
 </html>
