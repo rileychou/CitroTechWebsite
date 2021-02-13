@@ -113,7 +113,7 @@ a:visited {
     min-height: 500px;
     display: flex;
     align-items: center;
-    padding-right: 4rem;
+    padding-left: 4rem;
 }
 #header-logo {
     width: 300px;
@@ -190,6 +190,10 @@ a:visited {
     transition: all 0.5s;
 }
 
+#sign-up-buttons div:first-of-type{
+    margin-left: 0;
+}
+
 #sign-up-buttons div:hover{
     transform: scale(1.08);
     background-color: #b085ff;
@@ -197,7 +201,7 @@ a:visited {
 
 @keyframes title {
     0% {
-        transform: translateX(60%);
+        transform: translateX(-60%);
         opacity: 0.1;
     } 
     100% {
@@ -207,7 +211,7 @@ a:visited {
 }
 @keyframes subtitle {
     0% {
-        transform: translateX(50%);
+        transform: translateX(-50%);
         opacity: 0.1;
     } 
     100% {
@@ -464,6 +468,7 @@ button {
 }
 .sponsor-div img {
     width: 100%;
+    transition: all 0.5s;
 }
 
 #hcb {
@@ -476,8 +481,12 @@ button {
 #hcb img {
     width: 24em;
     height: auto;
+    transition: all 0.5s;
 }
 
+.sponsor-div img:hover ,#hcb  img:hover{
+    transform: scale(1.07);
+}
 #volunteers {
     padding: 0 10vw;
     position: relative;
