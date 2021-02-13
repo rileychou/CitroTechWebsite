@@ -332,6 +332,10 @@ p {
     max-width: 60%;
 }
 
+.scrollbuttons {
+    cursor: pointer;
+}
+
 #schedule-container {
     margin-left: 2em;
     flex-grow: 1;
