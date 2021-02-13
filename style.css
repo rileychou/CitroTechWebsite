@@ -121,6 +121,7 @@ a:visited {
 #hackathon-site{
     padding-left: 4rem;
 }
+
 #reg-header-logo {
     width: 300px;
     height: auto;
@@ -140,7 +141,6 @@ a:visited {
     animation-iteration-count: 1;
     animation-timing-function: linear;
 }
-
 
 @keyframes biglogo {
     from {
