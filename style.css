@@ -121,11 +121,20 @@ a:visited {
 #hackathon-site{
     padding-left: 4rem;
 }
-#header-logo {
+#reg-header-logo {
     width: 300px;
     height: auto;
     border-radius: 50%;
     border: 4px solid #EEE;
+    animation-name: biglogo;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+#hack-header-logo {
+    width: 300px;
+    height: auto;
     animation-name: biglogo;
     animation-duration: 1s;
     animation-iteration-count: 1;
