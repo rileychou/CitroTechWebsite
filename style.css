@@ -183,14 +183,22 @@ a:visited {
 }
 
 .time-container {
-    display: flex;
+    position: relative;
+    text-align: center;
+    color: black;
 }
+ .time-container div.row{
+     position: absolute;
+     top: 70%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: .5rem;
+ }
 
-.time-container img {
-    margin-left: 0;
-}
-.time-container>*{
-    margin: 0 8px;
+@media only screen and (min-width: 750px) {
+    .time-container div.row {
+        font-size: .8rem;
+    }
 }
 
 #sign-up-buttons {
@@ -213,6 +221,33 @@ a:visited {
 #sign-up-buttons div:hover{
     transform: scale(1.08);
     background-color: #b085ff;
+}
+
+.signup-btn {
+    margin: 8px;
+    padding: 8px 16px;
+    background-color: #D5BFFF;
+    border-radius: 18px;
+    transition: all 0.5s;
+    border: none;
+}
+
+.signup-btn:hover {
+    transform: scale(1.08);
+    background-color: #b085ff;
+}
+
+.btn-row {
+    position: fixed;
+}
+
+@media only screen and (max-width: 800px) {
+    .signup-btn {
+        flex-shrink: 5;
+    }
+    .btn-row {
+        transform: scale(.75);
+    }
 }
 
 @keyframes title {
@@ -247,7 +282,7 @@ p {
 }
 
 .squiggle-transition {
-    margin-top: -20vh;
+    margin-top: 0vh;
     width: 100%;
     height: fit-content;
     overflow: hidden;
@@ -320,13 +355,13 @@ p {
     padding-top: 10%;
 }
 
-.events-div h4 {
+/* .events-div h4 {
 
 }
 
 .events-div h5 {
     
-}
+} */
 .events-div p {
     margin: 0 auto;
     max-width: 60%;

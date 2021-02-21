@@ -38,6 +38,7 @@
         gtag('config', 'G-70D6QVXB92');
     </script>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -69,31 +70,24 @@
         </div>
 
     </nav>
-    <section id="home" class="page-header">
-        <div class="header-text">
-            <h1>Citro Hacks</h1>
-            <h2>An all-inclusive high school hackathon</h2>
+    <section id="home" class="page-header" style="height: 600px; padding-bottom: 5rem;">
             <div class="time-container">
-                <img src="../images/calendar.svg">
-                <h2 class="times">June 26-27, 2021</h2>
+                <img class="real-hackathon-logo" src="https://cdn.discordapp.com/attachments/780258646650781696/810039678706122752/CITRO_HACKS_3.png" style="max-width: 100%; height: auto;">
+                <div class="row">
+                    <!-- <img src="../images/clock.svg"> -->
+                    <p class="times" id="countdown"></p>
+                </div>
             </div>
-            <div class="time-container">
-                <img src="../images/clock.svg">
-                <h2 class="times" id="countdown"></h2>
-            </div>
-            
-            <div id="sign-up-buttons">
-                <div>Attendee Signup</div>
-                <div>Volunteer Signup</div>
-                <div>Discord</div>
-                <div>Devpost</div>
-            </div>
-        </div>
-        <div class="header-logo-container" id="hackathon-site">
-            <img id="hack-header-logo" src="../images/citro_hacks_1.png">
-        </div>
     </section>
-    <section class="squiggle-transition">
+    <div class="container">
+        <div class="row mx-auto btn-row d-flex justify-content-center" style="position: relative; margin-top: -30vh;">
+            <button style="z-index: 5;" class="signup-btn">Attendee Signup</button>
+            <button style="z-index: 5;" class="signup-btn">Volunteer Signup</button>
+            <button style="z-index: 5;" class="signup-btn">Discord</button>
+            <button style="z-index: 5;" class="signup-btn">Devpost</button>
+        </div>
+    </div>
+    <section class="squiggle-transition" style="position: static;">
         <img id="squiggle" src="../images/firstwave.jpg">
     </section>
     <section id="about">
