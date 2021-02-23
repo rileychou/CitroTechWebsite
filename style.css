@@ -204,7 +204,30 @@ a:visited {
     .time-container div.row {
         font-size: .8rem;
     }
+    .smol-hackathon-logo {
+        display: none;
+    }
 }
+
+@media (max-width: 750px) and (min-width: 200px) {
+    .smol-hackathon-logo {
+        display: block;
+        margin: 0 auto;
+    }
+    .real-hackathon-logo, .times{
+        display: none;
+    }
+}
+
+/* @media only screen and (max-width: 750px) {
+    .page-header div{
+        display: none;
+    }
+} */
+
+
+
+
 
 #sign-up-buttons {
     display: flex;
@@ -243,16 +266,8 @@ a:visited {
 }
 
 .btn-row {
-    position: fixed;
-}
-
-@media only screen and (max-width: 800px) {
-    .signup-btn {
-        flex-shrink: 5;
-    }
-    .btn-row {
-        transform: scale(.75);
-    }
+    display: flex;
+    flex-wrap: wrap;
 }
 
 @keyframes title {
