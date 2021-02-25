@@ -100,7 +100,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
-a:visited {
+a:visited, a:hover {
     color: inherit;
 }
 
@@ -316,7 +316,7 @@ p {
 }
 
 #about {
-    padding: 0 20vw;
+    padding: 1em 20vw;
 }
 #about p {
     font-size: 20px;
@@ -334,7 +334,7 @@ p {
 }
 
 #schedule {
-    padding: 0 10vw;
+    padding: 1em 10vw;
 }
 
 #schedule h2 {
@@ -502,7 +502,7 @@ button {
 }
 
 #faq {
-    padding: 0 10vw;
+    padding: 1em 10vw;
 }
 #faq .collapsible-grid {
     display: grid;
@@ -531,7 +531,7 @@ button {
     background-color: #C6F0F4;
 }
 #sponsors {
-    padding: 0 10vw;
+    padding: 1em 10vw;
     position: relative;
 }
 
@@ -563,7 +563,7 @@ button {
     transform: scale(1.07);
 }
 #volunteers {
-    padding: 0 10vw;
+    padding: 1em 10vw;
     position: relative;
 }
 
@@ -572,7 +572,7 @@ button {
 }
 
 #team {
-    padding: 0 10vw;
+    padding: 1em 10vw;
     margin-bottom: 5vh;
     position: relative;
 }
@@ -636,6 +636,7 @@ button {
 
 .team-social:hover {
     transform: scale(1.15);
+
 }
 
 /*.animate-on-scroll{
