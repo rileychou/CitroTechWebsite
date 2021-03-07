@@ -361,6 +361,9 @@ p {
     #events-container {
         display: none;
     }
+    #schedule-container {
+        margin: 0 !important;
+    }
 }
 
 .events-div {
@@ -372,7 +375,7 @@ p {
     background-size: contain;
     background-position: center top;
     background-repeat: no-repeat;
-    padding-top: 10%;
+    padding-top: 20%;
 }
 
 /* .events-div h4 {
@@ -579,8 +582,55 @@ button {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, minmax(14rem, 1fr));
-    grid-gap: 2em 1em;
+    grid-gap: 2em;
     justify-items: center;
+    text-align: center;
+}
+
+#prizes-grid {
+    grid-gap: 2em 3em;
+}
+#prizes {
+    padding: 1em 10vw;
+}
+
+.prize-holder {
+    width: 100%;
+    padding: 1em;
+    border-radius: 12px;
+    box-shadow: 0px 5px 10px 1px #CCC;
+    -moz-box-shadow: 0px 5px 10px 1px #CCC;
+    -webkit-box-shadow: 0px 5px 10px 1px #CCC;
+}
+
+.yellow {
+    background-color: #faecb2;
+}
+
+.green {
+    background-color: #bae8dc;
+}
+
+.purple {
+    background-color: #D5BFFF;
+}
+
+.blue {
+    background-color: #C6F0F4;
+}
+
+.pink {
+    background-color: #F8D0E9;
+}
+.prize-holder img {
+    width: 16em;
+    height: auto;
+}
+
+.prize-holder ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 #sponsor-grid {
