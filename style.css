@@ -519,7 +519,7 @@ button {
     padding: 6px;
     transition: 0.2s;
     border-radius: 24px;
-    margin: 10px;
+    margin: 10px 0;
     font-size: 18px;
     line-height: 32px;
 }
@@ -658,6 +658,7 @@ button {
 }
 
 .grid-container h4 {
+    padding-top: 0.5em;
     font-size: 24px;
 }
 .grid-container h5 {
@@ -786,7 +787,7 @@ button {
     
 @media (max-width: 1000px) {
     #faq {
-        padding: 0 20vw;
+        padding: 0 15vw;
     }
     #faq .collapsible-grid {
         grid-template-columns: repeat(1, minmax(8rem, 1fr));
@@ -892,6 +893,12 @@ hr {
     }
     #reg-header-logo {
         display: none;
+    }
+    #schedule h2 {
+        font-size: 24px;
+    }
+    #faq .collapsible {
+        font-size: 16px;
     }
     footer {
         padding: 1.5em 10vw !important;
