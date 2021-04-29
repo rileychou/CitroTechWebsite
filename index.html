@@ -1,222 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Citro Tech</title>
-        <meta charset="utf-8">
-        <link rel="icon" href="images/citroicon.png" type="image/png">
-        <!--meta tags-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <meta name="description" content="Citro Tech is a student-led organization dedicated to empower underrepresented communities in the tech field and provide resources to increase awareness and diversity in artificial intelligence. 🍋">
-        <meta name="author" content="Citro Tech">
-        <meta name="theme-color" content="#FFDA43">
-        <meta name="google-site-verification" content="STVmq9_FUS6h9Fq8b8DHXO1IpTap04QPZ0lJsEToXJ4" />
-        <meta name="google-site-verification" content="-1lXHFiLF6FrvX2ZNT90cpZLNsbr4JpanTOucVEtzy0" />
-        <!--open graph meta tags-->
-        <meta property="og:title" content="Citro Tech | Empowering minorities in tech">
-        <meta property="og:url" content="https://citro.tech">
-        <meta property="og:type" content="website">
-        <meta property="og:site_name" content="Citro Tech">
-        <meta property="og:description" content="Citro Tech is a student-led organization dedicated to empower underrepresented communities in the tech field and provide resources to increase awareness and diversity in artificial intelligence. 🍋">
-        <meta property="og:image" content="https://fragile.rocks/3zk">
-        <!--twitter meta tags-->
-        <meta property="twitter:site" content="Citro Tech">
-        <meta property="twitter:text:title" content="Citro Tech is a student-led organization dedicated to empower underrepresented communities in the tech field and provide resources to increase awareness and diversity in artificial intelligence. 🍋">
-        <meta property="twitter:image" content="https://fragile.rocks/3zk">
-        <meta property="twitter:card" content="summary_large_image">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-70D6QVXB92"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+  <head>
+    <title>Citro Tech</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="images/citroicon.png" type="image/png" />
+    <!--meta tags-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+      name="viewport"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="description"
+      content="Citro Tech is a student-led organization dedicated to empower underrepresented communities in the tech field and provide resources to increase awareness and diversity in artificial intelligence. 🍋"
+    />
+    <meta name="author" content="Citro Tech" />
+    <meta name="theme-color" content="#FFDA43" />
+    <meta
+      name="google-site-verification"
+      content="STVmq9_FUS6h9Fq8b8DHXO1IpTap04QPZ0lJsEToXJ4"
+    />
+    <meta
+      name="google-site-verification"
+      content="-1lXHFiLF6FrvX2ZNT90cpZLNsbr4JpanTOucVEtzy0"
+    />
+    <!--open graph meta tags-->
+    <meta
+      property="og:title"
+      content="Citro Tech | Empowering minorities in tech"
+    />
+    <meta property="og:url" content="https://citro.tech" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Citro Tech" />
+    <meta
+      property="og:description"
+      content="Citro Tech is a student-led organization dedicated to empower underrepresented communities in the tech field and provide resources to increase awareness and diversity in artificial intelligence. 🍋"
+    />
+    <meta property="og:image" content="https://fragile.rocks/3zk" />
+    <!--twitter meta tags-->
+    <meta property="twitter:site" content="Citro Tech" />
+    <meta
+      property="twitter:text:title"
+      content="Citro Tech is a student-led organization dedicated to empower underrepresented communities in the tech field and provide resources to increase awareness and diversity in artificial intelligence. 🍋"
+    />
+    <meta property="twitter:image" content="https://fragile.rocks/3zk" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-70D6QVXB92"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-            gtag('config', 'G-70D6QVXB92');
-        </script>
+      gtag("config", "G-70D6QVXB92");
+    </script>
 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/8c8404d857.js" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    </head>
-    <body>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="https://citro.tech/"><img id="nav-logo" src="images/citrologo.png"></a>
-            </div>
-            <a class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
-            <div class="navbar-links">
-                <ul class="nav">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="https://blog.citro.tech">Blogs</a></li>
-                    <li id="news-btn">
-                        <a href="https://mailchi.mp/9635b1c31c69/join-our-mailing-list" target="_blank">Newsletter</a>
-                    </li>
-                </ul>
-            </div>
-            
-        </nav>
-        <section id="home" class="page-header">
-            <div class="header-logo-container" id="reg-site">
-                <img id="reg-header-logo" src="images/citro_logo_white.png">
-            </div>
-            <div class="header-text">
-                <h1>Citro Tech</h1>
-                <h2>Empowering minorities in the tech field</h2>
-            </div>
-        </section>
-        <section class="squiggle-transition">
-            <img id="squiggle" src="images/firstwave.jpg">
-        </section>
-        <section id="about">
-            <h3>About</h3>
-            <p>
-                Citro Tech is a student-led organization that aims to empower minorities in the tech field. We provide opportunities and resources to allow students to explore their passions and build their careers in tech. 🍋
-            </p>
-            <div id="collapsible-info">
-                <button type="button" class="collapsible animate-on-scroll"><span>🍋 Our Mission</span></button>
-                <div class="content">
-                    <p>Citro Tech aims to address the lack of diversity in the tech field and encourage more people to pursue careers in tech. We hope to educate, inspire, and empower the next generation of leaders in tech by building an inclusive community and establishing unique initiatives.
-                    </p>
-                </div>
-                <button type="button" class="collapsible animate-on-scroll"><span>🍋 What Citro Tech Does</span></button>
-                <div class="content">
-                    <p>Citro Tech has 4 sub-teams: Blog Writers, Content Creators, Project Developers, and Outreach. We work on articles, short videos, and research projects with insightful info. We also publish a newsletter every 2 weeks with internship opportunities, learning resources, and event updates. Lastly, our grand plan is Citro Hacks, an all-inclusive and unforgettable hackathon coming in 2021!</p>
-                </div>
-            </div>
-        </section>
-        <section id="events">
-            <h3>Events</h3>
-            <h4>Upcoming Events</h4>
-            <h4>Past Events</h4>
-            <div class="grid-container">
-                <div class="prize-holder blue">
-                    <h4>How to Get Started in Coding</h4>
-                    <h5>Zion Asemota</h5>
-                    <img src="images/citro_hacks_1.png">
-                </div>
-                <div class="prize-holder pink">
-                    <h4>Careers In Tech</h4>
-                    <h5>Victoria Chen and Brian Kao</h5>
-                    <img src="images/citro_hacks_1.png">
-                </div>
-            </div>
-        </section>
-        <section id="team">
-            <h3>Team</h3>
-            <div class="grid-container">
-                <div class="team-member animate-on-scroll">
-                    <img src="images/new_pfp.png" alt="Marina">
-                    <h4>Marina Lee</h4>
-                    <h5>Founder | Lead Director</h5>
-                    <a class="team-social" href="https://www.linkedin.com/in/marinahylee/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <div class="team-member animate-on-scroll">
-                    <img src="images/riley.jpg" alt="Riley">
-                    <h4>Riley Chou</h4>
-                    <h5>Director of Technology</h5>
-                    <a class="team-social" href="https://www.linkedin.com/in/rileychou/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="team-social" href="https://github.com/rileychou" target="_blank"><i class="fab fa-github"></i></a>
-                    <a class="team-social" href="https://www.instagram.com/rollinriceballz/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
-                <div class="team-member animate-on-scroll">
-                    <img src="images/jane.jpg" alt="Jane">
-                    <h4>Jane Wu</h4>
-                    <h5>Director of Outreach</h5>
-                </div>
-                <div class="team-member animate-on-scroll">
-                    <img src="images/mark.jpg" alt="Mark">
-                    <h4>Mark Zhou</h4>
-                    <h5>Director of Research</h5>
-                </div>
-                <div class="team-member animate-on-scroll">
-                    <img src="images/kelly.jpg" alt="Kelly">
-                    <h4>Kelly Lee</h4>
-                    <h5>Director of Content Creation</h5>
-                </div>
-                <div class="team-member animate-on-scroll">
-                    <img src="images/joyce.jpeg" alt="Joyce">
-                    <h4>Joyce Tong</h4>
-                    <h5>Blog Writer</h5>
-                    <a class="team-social" href="https://linkedin.com/in/joyce-tong-030168145/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="team-social" href="https://instagram.com/_joycetong" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
-                <div class="team-member animate-on-scroll">
-                    <img src="images/angie.jpg" alt="Angie">
-                    <h4>Angie Jin</h4>
-                    <h5>Blog Writer</h5>
-                    <a class="team-social" href="https://www.instagram.com/angiiie.jin/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
-                <div class="team-member animate-on-scroll">
-                    <img src="images/nicolette.jpg" alt="Nicolette">
-                    <h4>Nicolette Pin</h4>
-                    <h5>Blog Writer</h5>
-                </div>
-                <div class="team-member animate-on-scroll">
-                    <img src="images/damyan.jpg" alt="Damian">
-                    <h4>Damian Yang</h4>
-                    <h5>Content Creator</h5>
-                    <a class="team-social" href="https://www.linkedin.com/in/damian-y-a017561b7/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="team-social" href="https://www.instagram.com/_damiyang_/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
-                <div class="team-member animate-on-scroll">
-                    <img src="images/ella.jpg" alt="Ella">
-                    <h4>Ella Xu</h4>
-                    <h5>Project Developer</h5>
-                    <a class="team-social" href="https://github.com/eilla1" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-                <div class="team-member animate-on-scroll">
-                    <img src="images/sejal.jpg" alt="Sejal">
-                    <h4>Sejal Bilwar</h4>
-                    <h5>Project Developer</h5>
-                    <a class="team-social" href="https://www.linkedin.com/in/sejal-bilwar-b621b31ab/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="team-social" href="https://www.instagram.com/lukupp_/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
-                <div class="team-member animate-on-scroll">
-                    <img src="images/sharana.jpg" alt="Sharana">
-                    <h4>Sharana Sabesan</h4>
-                    <h5>Outreach</h5>
-                    <a class="team-social" href="https://www.linkedin.com/in/sharana-sabesan-4bb0211b3/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="team-social" href="https://www.instagram.com/shara_sabe/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
-                <div class="team-member animate-on-scroll">
-                    <img src="images/saloni.jpg" alt="Saloni">
-                    <h4>Saloni Sivakumar</h4>
-                    <h5>Outreach</h5>
-                    <a class="team-social" href="https://www.instagram.com/saloni.sivakumar/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <section class="social-wrapper">
-                <div class="social-links">
-                    <a class="social-buttons" href="https://linktr.ee/citrotech/" target="_blank"><i class="fas fa-link"></i></a>
-                    <a class="social-buttons" href="https://www.linkedin.com/company/citro-tech/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="social-buttons" href="https://www.youtube.com/channel/UC11dTdsSqNHJawj97apdhVA/featured?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a class="social-buttons" href="https://www.instagram.com/citro.tech/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a class="social-buttons" href="mailto:teamcitrotech@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
-                </div>
-                <div class="logo">
-                    <img id="foot-logo" src="images/citrologo.png">
-                </div>
-            </section>
-            <hr>
-            <section class="copyright">
-                <small>© Made with ❤️ by Citro Tech 2020-2021.</small>
-            </section>
-        </footer>
-        <script src="scripts/scroll.js"></script>
-        <script src="scripts/navbarscript.js"></script>
-        <script src="scripts/collapsible.js"></script>
-        <script src="scripts/animateOnScroll.js"></script>
-    </body>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8c8404d857.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="https://citro.tech/"
+          ><img id="nav-logo" src="images/citrologo.png"
+        /></a>
+      </div>
+      <a class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul class="nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="https://blog.citro.tech">Blogs</a></li>
+          <li>
+            <a
+              href="https://mailchi.mp/9635b1c31c69/join-our-mailing-list"
+              target="_blank"
+              >Newsletter</a
+            >
+          </li>
+          <li id="news-btn">
+            <a href="/citrohacks/index.html">Hackathon</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="home" class="page-header">
+      <div class="header-logo-container" id="reg-site">
+        <img id="reg-header-logo" src="images/citro_logo_white.png" />
+      </div>
+      <div class="header-text">
+        <h1>Citro Tech</h1>
+        <h2>Empowering minorities in the tech field</h2>
+      </div>
+    </section>
+    <section class="squiggle-transition">
+      <img id="squiggle" src="images/firstwave.jpg" />
+    </section>
+    <section id="about">
+      <h3>About</h3>
+      <p>
+        Citro Tech is a student-led organization that aims to empower minorities
+        in the tech field. We provide opportunities and resources to allow
+        students to explore their passions and build their careers in tech. 🍋
+      </p>
+      <div id="collapsible-info">
+        <button type="button" class="collapsible animate-on-scroll">
+          <span>🍋 Our Mission</span>
+        </button>
+        <div class="content">
+          <p>
+            Citro Tech aims to address the lack of diversity in the tech field
+            and encourage more people to pursue careers in tech. We hope to
+            educate, inspire, and empower the next generation of leaders in tech
+            by building an inclusive community and establishing unique
+            initiatives.
+          </p>
+        </div>
+        <button type="button" class="collapsible animate-on-scroll">
+          <span>🍋 What Citro Tech Does</span>
+        </button>
+        <div class="content">
+          <p>
+            Citro Tech has 4 sub-teams: Blog Writers, Content Creators, Project
+            Developers, and Outreach. We work on articles, short videos, and
+            research projects with insightful info. We also publish a newsletter
+            every 2 weeks with internship opportunities, learning resources, and
+            event updates. Lastly, our grand plan is Citro Hacks, an
+            all-inclusive and unforgettable hackathon coming in 2021!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="stats-box">
+        <div class="smol-stats-box">
+          <img src="images/user.svg" alt="icon" width="70" height="70" />
+          <p class="stats-box-number">25,000+</p>
+          <p class="stats-box-label">audience reached</p>
+        </div>
+        <div class="smol-stats-box">
+          <img src="images/building.svg" alt="icon" width="70" height="70" />
+          <p class="stats-box-number">29</p>
+          <p class="stats-box-label">states reached</p>
+        </div>
+        <div class="smol-stats-box">
+          <img src="images/globe.svg" alt="icon" width="70" height="70" />
+          <p class="stats-box-number">30+</p>
+          <p class="stats-box-label">countries reached</p>
+        </div>
+      </div>
+    </section>
+    <section id="events">
+      <h3>Events</h3>
+      <h4>Upcoming Events</h4>
+      <h4>Past Events</h4>
+      <div class="grid-container">
+        <div class="prize-holder blue">
+          <h4>How to Get Started in Coding</h4>
+          <h5>Zion Asemota</h5>
+          <img src="images/citro_hacks_1.png" />
+        </div>
+        <div class="prize-holder pink">
+          <h4>Careers In Tech</h4>
+          <h5>Victoria Chen and Brian Kao</h5>
+          <img src="images/citro_hacks_1.png" />
+        </div>
+      </div>
+    </section>
+    <section id="team">
+      <h3>Team</h3>
+      <div class="grid-container">
+        <div class="team-member animate-on-scroll">
+          <img src="images/new_pfp.png" alt="Marina" />
+          <h4>Marina Lee</h4>
+          <h5>Founder | Lead Director</h5>
+          <a
+            class="team-social"
+            href="https://www.linkedin.com/in/marinahylee/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+        <div class="team-member animate-on-scroll">
+          <img src="images/riley.jpg" alt="Riley" />
+          <h4>Riley Chou</h4>
+          <h5>Director of Technology</h5>
+          <a
+            class="team-social"
+            href="https://www.linkedin.com/in/rileychou/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            class="team-social"
+            href="https://github.com/rileychou"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            class="team-social"
+            href="https://www.instagram.com/rollinriceballz/"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <div class="team-member animate-on-scroll">
+          <img src="images/jane.jpg" alt="Jane" />
+          <h4>Jane Wu</h4>
+          <h5>Director of Outreach</h5>
+        </div>
+        <div class="team-member animate-on-scroll">
+          <img src="images/mark.jpg" alt="Mark" />
+          <h4>Mark Zhou</h4>
+          <h5>Director of Research</h5>
+        </div>
+        <div class="team-member animate-on-scroll">
+          <img src="images/kelly.jpg" alt="Kelly" />
+          <h4>Kelly Lee</h4>
+          <h5>Director of Content Creation</h5>
+        </div>
+        <div class="team-member animate-on-scroll">
+          <img src="images/joyce.jpeg" alt="Joyce" />
+          <h4>Joyce Tong</h4>
+          <h5>Blog Writer</h5>
+          <a
+            class="team-social"
+            href="https://linkedin.com/in/joyce-tong-030168145/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            class="team-social"
+            href="https://instagram.com/_joycetong"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <div class="team-member animate-on-scroll">
+          <img src="images/angie.jpg" alt="Angie" />
+          <h4>Angie Jin</h4>
+          <h5>Blog Writer</h5>
+          <a
+            class="team-social"
+            href="https://www.instagram.com/angiiie.jin/"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <div class="team-member animate-on-scroll">
+          <img src="images/nicolette.jpg" alt="Nicolette" />
+          <h4>Nicolette Pin</h4>
+          <h5>Blog Writer</h5>
+        </div>
+        <div class="team-member animate-on-scroll">
+          <img src="images/damyan.jpg" alt="Damian" />
+          <h4>Damian Yang</h4>
+          <h5>Content Creator</h5>
+          <a
+            class="team-social"
+            href="https://www.linkedin.com/in/damian-y-a017561b7/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            class="team-social"
+            href="https://www.instagram.com/_damiyang_/"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <div class="team-member animate-on-scroll">
+          <img src="images/ella.jpg" alt="Ella" />
+          <h4>Ella Xu</h4>
+          <h5>Project Developer</h5>
+          <a
+            class="team-social"
+            href="https://github.com/eilla1"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+        <div class="team-member animate-on-scroll">
+          <img src="images/sejal.jpg" alt="Sejal" />
+          <h4>Sejal Bilwar</h4>
+          <h5>Project Developer</h5>
+          <a
+            class="team-social"
+            href="https://www.linkedin.com/in/sejal-bilwar-b621b31ab/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            class="team-social"
+            href="https://www.instagram.com/lukupp_/"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <div class="team-member animate-on-scroll">
+          <img src="images/sharana.jpg" alt="Sharana" />
+          <h4>Sharana Sabesan</h4>
+          <h5>Outreach</h5>
+          <a
+            class="team-social"
+            href="https://www.linkedin.com/in/sharana-sabesan-4bb0211b3/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            class="team-social"
+            href="https://www.instagram.com/shara_sabe/"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <div class="team-member animate-on-scroll">
+          <img src="images/saloni.jpg" alt="Saloni" />
+          <h4>Saloni Sivakumar</h4>
+          <h5>Outreach</h5>
+          <a
+            class="team-social"
+            href="https://www.instagram.com/saloni.sivakumar/"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section class="social-wrapper">
+        <div class="social-links">
+          <a
+            class="social-buttons"
+            href="https://linktr.ee/citrotech/"
+            target="_blank"
+            ><i class="fas fa-link"></i
+          ></a>
+          <a
+            class="social-buttons"
+            href="https://www.linkedin.com/company/citro-tech/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            class="social-buttons"
+            href="https://www.youtube.com/channel/UC11dTdsSqNHJawj97apdhVA/featured?view_as=subscriber"
+            target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a
+            class="social-buttons"
+            href="https://www.instagram.com/citro.tech/"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            class="social-buttons"
+            href="mailto:teamcitrotech@gmail.com"
+            target="_blank"
+            ><i class="far fa-envelope"></i
+          ></a>
+        </div>
+        <div class="logo">
+          <img id="foot-logo" src="images/citrologo.png" />
+        </div>
+      </section>
+      <hr />
+      <section class="copyright">
+        <small>© Made with ❤️ by Citro Tech 2020-2021.</small>
+      </section>
+    </footer>
+    <script src="scripts/scroll.js"></script>
+    <script src="scripts/navbarscript.js"></script>
+    <script src="scripts/collapsible.js"></script>
+    <script src="scripts/animateOnScroll.js"></script>
+  </body>
 </html>
