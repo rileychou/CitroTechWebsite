@@ -1014,3 +1014,7 @@ hr {
     flex-direction: column;
   }
 }
+
+#figma {
+  height: 230px;
+}
