@@ -324,11 +324,22 @@ p {
 
 #about {
   padding: 1em 20vw;
+  text-align: center;
 }
 #about p {
   font-size: 20px;
-  text-align: center;
 }
+#stats-counter {
+  margin: 5vh 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#stats-counter h4 {
+  font-size: 60px;
+}
+
 #info-links {
   text-align: center;
   display: flex;
