@@ -1,5 +1,5 @@
 # Citro Tech
-Citro Tech is a student-led organization dedicated to empower underrepresented communities in the tech field and provide resources to increase awareness and diversity in artificial intelligence. 🍋
+Citro Tech is a student-led organization dedicated to empowering underrepresented communities in the tech field and providing resources to increase awareness and diversity in artificial intelligence. 🍋
 
 ## Get In Touch!
 * LinkedIn: [@citro-tech](https://www.linkedin.com/company/citro-tech/)
