@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Citro Hacks</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="../../images/citroicon.png" type="image/png">
+    <!--meta tags-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+        name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description"
+        content="Citro Hacks is an online hackathon where high schoolers can come together and build cool projects, learn new skills, and win free swag!">
+    <meta name="author" content="Citro Tech">
+    <meta name="theme-color" content="#FFDA43">
+    <!--open graph meta tags-->
+    <meta property="og:title" content="Citro Hacks | An all-inclusive hackathon">
+    <meta property="og:url" content="https://citro.tech/citrohacks/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Citro Hacks">
+    <meta property="og:description"
+        content="Citro Hacks is an online hackathon where high schoolers can come together and build cool projects, learn new skills, and win free swag!">
+    <meta property="og:image" content="https://fragile.rocks/3zk">
+    <!--twitter meta tags-->
+    <meta property="twitter:site" content="Citro Hacks">
+    <meta property="twitter:text:title"
+        content="Citro Hacks is an online hackathon where high schoolers can come together and build cool projects, learn new skills, and win free swag!">
+    <meta property="twitter:image" content="https://fragile.rocks/3zk">
+    <meta property="twitter:card" content="summary_large_image">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!--might have to take this out later idk-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-70D6QVXB92"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-70D6QVXB92');
+    </script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="https://kit.fontawesome.com/8c8404d857.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#home"><img id="nav-logo" src="../../images/citrologo.png"></a>
+        </div>
+        <a class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul class="nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#prizes">Prizes</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="#volunteers">Team</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <section id="home" class="page-header" style="padding-bottom: 5rem;
+        background-image: url(../../images/citrohacks2023/CITRO_HACKS_2.0_COVER_IMAGE.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 4.0rem 0 0 0 !important;">
+        <div class="time-container">
+            
+            <!--
+            <div class="real-hackathon-logo" style="background-image: url('Image_Location'); 
+  background-size: cover; height:480px; padding-top:80px;">
+            </div>
+            <img class="real-hackathon-logo"
+                src="../../images/citrohacks2023/CITRO_HACKS_2.0_COVER_IMAGE.png"
+                style="width: 100%; height: auto;">
+            
+            <img class="smol-hackathon-logo" src="../../images/citro_hacks_1.png" alt="citro hacks logo">
+            -->
+            <div class="row">
+                <!-- 
+                <img src="../../images/clock.svg"> 
+                -->
+                <p class="times"></p>
+            </div>
+        </div>
+    </section>
+    <div class="container" style="height: 0;">
+        <div class="row mx-auto btn-row d-flex justify-content-center" style="position: relative; top: -30vh;">
+            <a href="https://bit.ly/citrohacks2023" target="_blank"><button style="z-index: 5;"
+                    class="signup-btn">Attendee Signup</button></a>
+            <a href="https://bit.ly/ch23-volunteer" target="_blank"><button style="z-index: 5;"
+                    class="signup-btn">Volunteer Signup</button></a>
+            <a href="https://bit.ly/ch23-ambassador" target="_blank"><button style="z-index: 5;"
+                    class="signup-btn">Ambassador</button></a>
+            <a href="https://discord.gg/JuzUPZ9jQB" target="_blank"><button style="z-index: 5;"
+                    class="signup-btn">Discord</button></a>
+            <a href="" target="_blank"><button style="z-index: 5;"
+                    class="signup-btn">Devpost</button></a>
+        </div>
+    </div>
+
+    <section id="about">
+        <h3>About</h3>
+        <p>
+            Citro Hacks is an all-inclusive online hackathon organized by <a href="https://citro.tech">Citro
+                Tech</a>, a student led organization dedicated to empowering minorities in the tech field. We want to
+            provide a valuable experience for both beginners and advanced coders alike. We have
+            plenty of swag, workshops, and games for attendees to enjoy at no cost. Join us to meet new friends, network
+            with computer science professionals, and build something awesome!
+        </p>
+        <!--
+        <div id="stats-counter">
+            <div class="stats-column">
+                <h4>831</h4>
+                <p>Sign-Ups</p>
+            </div>
+            <div class="stats-column">
+                <h4 class="counter">51</h4>
+                <p>Countries</p>
+            </div>
+            <div class="stats-column">
+                <h4 class="counter">37</h4>
+                <p>States</p>
+            </div>
+            <div class="stats-column">
+                <h4 class="counter">40</h4>
+                <p>Volunteers</p>
+            </div>
+            <div class="stats-column">
+                <h4 class="counter">44</h4>
+                <p>Ambassadors</p>
+            </div>
+        </div>
+        -->
+
+        <div id="info-links">
+            <h5><a href="https://mailchi.mp/9635b1c31c69/join-our-mailing-list" target="_blank">Newsletter</a></h5>
+            <h5><a href="https://linktr.ee/citrotech/" target="_blank">Linktree</a></h5>
+            <h5><a href="https://citro.tech/">Citro Tech</a></h5>
+        </div>
+    </section>
+    <section id="schedule">
+        <h3>Schedule</h3>
+        <p>Still being set up. Tune in later for updates!</p>
+        <!--
+        <p>All events are subject to change without notice. All times in PST.</p>
+        <div id="sched-and-events">
+            <div id="events-container">
+                <div class="events-div">
+                    <h4 class="event-time">Friday, 5:00 PM</h5>
+                        <h5 class="event-title">Opening Ceremony + Keynote
+                    </h4>
+                    <p>Kicking off our hackathon, Beth McBride from AI4ALL will be delivering our keynote speech!</p>
+                </div>
+                <div class="events-div">
+                    <h4 class="event-time">Friday, 5:30 PM</h5>
+                        <h5 class="event-title">Hacking Begins
+                    </h4>
+                    <p>Now is the time to start your projects, have fun!</p>
+                </div>
+                <div class="events-div">
+                    <h4 class="event-time">Friday, 6:00 PM</h5>
+                        <h5 class="event-title">How to navigate your 1st hackathon
+                    </h4>
+                    <p>The perfect workshop for first timers hackathon goers to get acquianted by what goes on during a
+                        hackathon.</p>
+                </div>
+                <div class="events-div">
+                    <h4 class="event-time">Friday, 7:00 PM</h5>
+                        <h5 class="event-title">Intro to web dev
+                    </h4>
+                    <p>Lachlan Campbell, a web designer-developer from Hack Club, will walk you through building your
+                        first website!</p>
+                </div>
+                <div class="events-div">
+                    <h4 class="event-time">Friday, 8:00 PM</h5>
+                        <h5 class="event-title">Hype Night
+                    </h4>
+                    <p>Join us for a fun game of Krunker before the official kickoff.</p>
+                </div>
+                <div class="events-div">
+                    <h4 class="event-time">Saturday, 11:00 AM</h5>
+                        <h5 class="event-title">Intro to Python
+                    </h4>
+                    <p>Led by Khushi Valia, you will learn the fundamentals of Python, one of the most popular
+                        programming languages.</p>
+                </div>
+                <div class="events-div">
+                    <h4 class="event-time">Saturday, 1:00 PM</h5>
+                        <h5 class="event-title">Data Science Workshop
+                    </h4>
+                    <p>Learn about how data science can help you use data to advance your career with Shagun Khare.</p>
+                </div>
+                <div class="events-div">
+                    <h4 class="event-time">Saturday, 2:00 PM</h5>
+                        <h5 class="event-title">Intro to AR
+                    </h4>
+                    <p>Learn how to build a cloud-connected AR/VR app in 15 minutes or less, presented by echoAR.</p>
+                </div>
+                <div class="events-div">
+                    <h4 class="event-time">Saturday, 3:00 PM</h5>
+                        <h5 class="event-title">Intro to Github
+                    </h4>
+                    <p>Learn how to utilize Github, the most popular version control software with Lucy Hao.</p>
+                </div>
+                <div class="events-div">
+                    <h4 class="event-time">Saturday, 4:00 PM</h5>
+                        <h5 class="event-title">Intro to Figma
+                    </h4>
+                    <p>Christina Chen, a UX design intern at Cisco, will show you how to design better UIs with Figma.
+                    </p>
+                </div>
+                <div class="events-div">
+                    <h4 class="event-time">Saturday, 5:00 PM</h5>
+                        <h5 class="event-title">Postman API Workshop
+                    </h4>
+                    <p>Learn the basics of APIs in this hands-on 101 session with Postman. Get direct experience working
+                        with APIs and Postman, an industry-standard tool.</p>
+                </div>
+                <div class="events-div">
+                    <h4 class="event-time">Saturday, 2:00 PM</h5>
+                        <h5 class="event-title">Android App (React Native)
+                    </h4>
+                    <p>Yuvraj Dwivedi will teach you how to build an Android App with React Native, the steadily-growing
+                        mobile app framework</p>
+                </div>
+                <div class="events-div">
+                    <h4 class="event-time">Saturday, 7:00 PM</h5>
+                        <h5 class="event-title">Intro to Next.js
+                    </h4>
+                    <p>Sam Poder from Hack Club will be teaching you how to build a web app with the Next.js Framework!
+                    </p>
+                </div>
+                <div class="events-div">
+                    <h4 class="event-time">Saturday, 9:00 PM</h5>
+                        <h5 class="event-title">Minecraft game night
+                    </h4>
+                    <p>Relax after a whole day of coding with some minecraft!</p>
+                </div>
+                <div class="events-div">
+                    <h4 class="event-time">Sunday, 8:00 AM</h5>
+                        <h5 class="event-title">Resume Building Workshop
+                    </h4>
+                    <p>Learn how to build a strong resume that lands you internships with Rakshaa Viswanathan </p>
+                </div>
+                <div class="events-div">
+                    <h4 class="event-time">Sunday, 10:00 PM</h5>
+                        <h5 class="event-title">Social Media/Graphic Design
+                    </h4>
+                    <p>Want to take your social media feed to the next level? Learn the tips and tricks of graphic
+                        design with Emily Han</p>
+                </div>
+                <div class="events-div">
+                    <h4 class="event-time">Sunday, 11:00 AM</h5>
+                        <h5 class="event-title">Submissions due
+                    </h4>
+                    <p>Make sure you submit your creation on Devpost, we can't wait to see it! </p>
+                </div>
+                <div class="events-div">
+                    <h4 class="event-time">Sunday, 11:00 AM</h5>
+                        <h5 class="event-title">Linkedin Profiles 101
+                    </h4>
+                    <p>Learn how to grow your professional brand by building a Linkedin Profile with Ella Yi Xiu Wang.
+                    </p>
+                </div>
+                <div class="events-div">
+                    <h4 class="event-time">Sunday, 2:00 PM</h5>
+                        <h5 class="event-title">Entrepreneuership + Mental Health
+                    </h4>
+                    <p>Abigayle Peterson will teach you about how Entrepreneuership and Mental Health connects.</p>
+                </div>
+                <div class="events-div">
+                    <h4 class="event-time">Sunday, 4:00 PM</h5>
+                        <h5 class="event-title">Typing Contest
+                    </h4>
+                    <p>Get your fingers warmed up and compete against other attendees to see who is the fastest typist
+                        of them all.</p>
+                </div>
+                <div class="events-div">
+                    <h4 class="event-time">Sunday, 5:00 PM</h5>
+                        <h5 class="event-title">Journey in STEM
+                    </h4>
+                    <p>Izzy Lapidus will take you through her journey in STEM and all the challenges she faced.</p>
+                </div>
+                <div class="events-div">
+                    <h4 class="event-time">Sunday, 6:00 PM</h5>
+                        <h5 class="event-title">Closing Ceremony
+                    </h4>
+                    <p>As Citro Hacks comes to an end, we are wrapping it up with our closing ceremony to announce our
+                        winners and put an end to this weekend of making. </p>
+                </div>
+            </div>
+            <div id="schedule-container">
+                <div class="schedule-slides">
+                    <div class="schedule-title">
+                        <span class="scrollbuttons" onclick="plusDivs(-1, 1)">&#10094</span>
+                        <h2>Friday, June 25</h2>
+                        <span class="scrollbuttons" onclick="plusDivs(+1, 1)">&#10095</span>
+                    </div>
+
+                    <table>
+                        <colgroup>
+                            <col span="1" style="width: 33%;">
+                            <col span="1" style="width: 67%;">
+                        </colgroup>
+                        <tr>
+                            <th>Time</th>
+                            <th>Event</th>
+                        </tr>
+                        <tr class="schedule-rows">
+                            <td>5:00 PM</td>
+                            <td>Opening Ceremony + Keynote Speaker</td>
+                        </tr>
+                        <tr class="schedule-rows">
+                            <td>5:30 PM</td>
+                            <td>Hacking Begins</td>
+                        </tr>
+                        <tr class="schedule-rows">
+                            <td>6:00 PM</td>
+                            <td>How to Navigate your First Hackathon</td>
+                        </tr>
+                        <tr class="schedule-rows">
+                            <td>7:00 PM</td>
+                            <td>Intro to Web Development</td>
+                        </tr>
+                        <tr class="schedule-rows">
+                            <td>8:00 PM</td>
+                            <td>Krunker.io Hype Night</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="schedule-slides">
+                    <div class="schedule-title">
+                        <span class="scrollbuttons" onclick="plusDivs(-1, 1)">&#10094</span>
+                        <h2>Saturday, June 26</h2>
+                        <span class="scrollbuttons" onclick="plusDivs(+1, 1)">&#10095</span>
+                    </div>
+                    <table>
+                        <colgroup>
+                            <col span="1" style="width: 33%;">
+                            <col span="1" style="width: 67%;">
+                        </colgroup>
+                        <tr>
+                            <th>Time</th>
+                            <th>Event</th>
+                        </tr>
+                        <tr class="schedule-rows">
+                            <td>11:00 AM</td>
+                            <td>Intro to Python</td>
+                        </tr>
+                        <tr class="schedule-rows">
+                            <td>1:00 PM</td>
+                            <td>Intro to Data Science</td>
+                        </tr>
+                        <tr class="schedule-rows">
+                            <td>2:00 PM</td>
+                            <td>Intro to AR</td>
+                        </tr>
+                        <tr class="schedule-rows">
+                            <td>3:00 PM</td>
+                            <td>Intro to Github</td>
+                        </tr>
+                        <tr class="schedule-rows">
+                            <td>4:00 PM</td>
+                            <td>Intro to Figma</td>
+                        </tr>
+                        <tr class="schedule-rows">
+                            <td>5:00 PM</td>
+                            <td>Postman API Workshop</td>
+                        </tr>
+                        <tr class="schedule-rows">
+                            <td>6:00 PM</td>
+                            <td>Android App Dev (React Native)</td>
+                        </tr>
+                        <tr class="schedule-rows">
+                            <td>7:00 PM</td>
+                            <td>Intro to Next.js</td>
+                        </tr>
+                        <tr class="schedule-rows">
+                            <td>9:00 PM</td>
+                            <td>Minecraft Game Night</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="schedule-slides">
+                    <div class="schedule-title">
+                        <span class="scrollbuttons" onclick="plusDivs(-1, 1)">&#10094</span>
+                        <h2>Sunday, June 27</h2>
+                        <span class="scrollbuttons" onclick="plusDivs(+1, 1)">&#10095</span>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Time</th>
+                            <th>Event</th>
+                        </tr>
+                        <tr class="schedule-rows">
+                            <td>8:00 AM</td>
+                            <td>Resume building workshop</td>
+                        </tr>
+                        <tr class="schedule-rows">
+                            <td>10:00 AM</td>
+                            <td>Social Media/Graphic Design</td>
+                        </tr>
+                        <tr class="schedule-rows">
+                            <td>11:00 AM</td>
+                            <td>Submissions due</td>
+                        </tr>
+                        <tr class="schedule-rows">
+                            <td>11:00 AM</td>
+                            <td>Linkedin Profiles 101</td>
+                        </tr>
+                        <tr class="schedule-rows">
+                            <td>2:00 PM</td>
+                            <td>Entrepreneuership + Mental Health</td>
+                        </tr>
+                        <tr class="schedule-rows">
+                            <td>4:00 PM</td>
+                            <td>Typing contest</td>
+                        </tr>
+                        <tr class="schedule-rows">
+                            <td>5:00 PM</td>
+                            <td>Journey in STEM</td>
+                        </tr>
+                        <tr class="schedule-rows">
+                            <td>6:00 PM</td>
+                            <td>Closing Ceremony</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        -->
+    </section>
+    <section id="prizes">
+        <h3>Prizes</h3>
+        <p>Still being set up. Tune in later for updates!</p>
+        <!--
+        <div class="grid-container" id="prizes-grid">
+            <div class="prize-holder yellow">
+                <h4>Best Overall</h4>
+                <h5>Amazon Fire HD 8 Tablet</h5>
+                <img src="../../images/fire8.jpeg">
+            </div>
+            <div class="prize-holder green">
+                <h4>Best App</h4>
+                <h5>Anker Wireless Charging Pad</h5>
+                <img src="../../images/anker.png">
+            </div>
+            <div class="prize-holder purple">
+                <h4>Best Website</h4>
+                <h5>Sublime Text Licenses</h5>
+                <img src="../../images/sublime (1).png">
+            </div>
+            <div class="prize-holder blue">
+                <h4>Best Health Hack</h4>
+                <h5>RGB Strip Lights</h5>
+                <img src="../../images/rgblights.png">
+            </div>
+            <div class="prize-holder pink">
+                <h4>Best Education Hack</h4>
+                <h5>Corsair Katar Pro XT Gaming Mice</h5>
+                <img src="../../images/mouse (1).png">
+            </div>
+            <div class="prize-holder green">
+                <h4>Best Environment Hack</h4>
+                <h5>Raspberry Pi 2GB</h5>
+                <img src="../../images/rpi.png">
+            </div>
+            <div class="prize-holder yellow">
+                <h4>Best Beginner Hack</h4>
+                <h5>Digital Clock</h5>
+                <img src="../../images/clock.png">
+            </div>
+            <div class="prize-holder yellow">
+                <h4>Best Design</h4>
+                <h5>Figma Swag Bag</h5>
+                <img id="figma" src="../../images/Figma-Icon.svg">
+            </div>
+            <div class="prize-holder purple">
+                <h4>echoAR Challenge</h4>
+                <h5>echoAR free 30 day access + 50 dollar Amazon Giftcard</h5>
+                <img src="../../images/echoAR - Logo 2020 - Cloud.png">
+            </div>
+            <div class="prize-holder blue" id="swag-everyone">
+                <h4>Free Swag</h4>
+                <h5>
+                    <ul>
+                        <li>Wolfram|One platform access</li>
+                        <li>Balsamiq Cloud 90 day access</li>
+                        <li>Free Taskade Pro Upgrades</li>
+                        <li>Interview Cake Coding Prep</li>
+                        <li>Linode Promo Code</li>
+                        <li>Repl.it Hacker Plan</li>
+                        <li>JetBrains Licenses</li>
+                        <li>AoPS Credits</li>
+                        <li>1Password 6 Months Free Membership</li>
+                        <li>Egghead</li>
+                        <li>50% off sketch licenses</li>
+                        <li>6 Months Figma Professional</li>
+                        <li>Figma Stickers and Pins</li>
+                        <li>60 day Digital Ocean free trial </li>
+                    </ul>
+                </h5>
+
+            </div>
+        </div>
+        -->
+    </section>
+    <section id="faq">
+        <h3>FAQ</h3>
+        <div class="collapsible-grid">
+            <div class="collapsible-container">
+                <button type="button" class="collapsible animate-on-scroll"><span>🍋 What is a
+                        Hackathon?</span></button>
+                <div class="content">
+                    <p>A hackathon is an event where many programmers gather up for a couple hours to collaborate on a
+                        project, network with people, get free stuff, and have fun! The students’ projects are then
+                        pitched to judges for a chance to win prizes!
+                    </p>
+                </div>
+            </div>
+            <div class="collapsible-container">
+                <button type="button" class="collapsible animate-on-scroll"><span>🍋 Who can
+                        participate?</span></button>
+                <div class="content">
+                    <p>While only high school students and recently graduated seniors can submit a project, all students
+                        regardless of age, gender, and location are welcome to attend the workshops!
+                    </p>
+                </div>
+            </div>
+            <div class="collapsible-container">
+                <button type="button" class="collapsible animate-on-scroll"><span>🍋 What do I need?</span></button>
+                <div class="content">
+                    <p>All you need is a computer, an internet connection, and curiosity! It'd be helpful to have some
+                        food and a comfortable workspace too.</p>
+                </div>
+            </div>
+            <div class="collapsible-container">
+                <button type="button" class="collapsible animate-on-scroll"><span>🍋 Is Citro Hacks
+                        free?</span></button>
+                <div class="content">
+                    <p>Citro Hacks is <strong>100% Free!</strong> Thanks to our generous sponsors, we are able to cover
+                        all costs for swag and shipping.</p>
+                </div>
+            </div>
+            <div class="collapsible-container">
+                <button type="button" class="collapsible animate-on-scroll"><span>🍋 Do I need prior coding
+                        experience?</span></button>
+                <div class="content">
+                    <p>Absolutely not! Citro Hacks is designed to be beginner-friendly, and we will have plenty of
+                        introductory workshops and mentors available.
+                    </p>
+                </div>
+            </div>
+            <div class="collapsible-container">
+                <button type="button" class="collapsible animate-on-scroll"><span>🍋 Do I need a team?</span></button>
+                <div class="content">
+                    <p>You may form a team with up to 4 members, but going solo is cool too! You can bring your friends
+                        as a team, or you can find team members at the event on our Discord server.
+                    </p>
+                </div>
+            </div>
+            <div class="collapsible-container">
+                <button type="button" class="collapsible animate-on-scroll"><span>🍋 Do I need to stay for the entire
+                        time?
+                    </span></button>
+                <div class="content">
+                    <p>Nope! While we encourage you to attend as many workshops as possible, feel free to log off to
+                        work on your projects and take breaks.
+                    </p>
+                </div>
+            </div>
+            <div class="collapsible-container">
+                <button type="button" class="collapsible animate-on-scroll"><span>🍋 Do I have to submit a
+                        project?</span></button>
+                <div class="content">
+                    <p>Nope! While we encourage you to submit a hack for a chance to win our awesome prizes, you are
+                        welcome to just attend the workshops!
+                    </p>
+                </div>
+            </div>
+            <div class="collapsible-container">
+                <button type="button" class="collapsible animate-on-scroll"><span>🍋 Can I volunteer?</span></button>
+                <div class="content">
+                    <p>Yes! We have speakers, mentors, and judges applications open. Speakers may be high-school aged
+                        and up, but mentors and judges need to be college-aged and up.
+                    </p>
+                </div>
+            </div>
+
+            <div class="collapsible-container">
+                <button type="button" class="collapsible animate-on-scroll"><span>🍋 I have another
+                        question...</span></button>
+                <div class="content">
+                    <p>We will gladly answer any questions you have! You can contact us at <a
+                            href="mailto:info@citro.tech" target="_blank">info@citro.tech</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sponsors">
+        <h3>Sponsors</h3>
+        <p>Interested in sponsoring our event? Check out our <a href="https://bit.ly/ct_sponsor"
+                target="_blank"><b>sponsorship prospecteus</b></a> and email us at <a
+                href="mailto:sponsorships@citro.tech" target="_blank"><b>sponsorships@citro.tech</b></a>!</p>
+        <!--
+            <div class="grid-container" id="sponsor-grid">
+            <div class="sponsor-div">
+                <a href="https://www.lannerinc.com/" target="_blank"><img src="../../images/lanner.png" alt="Lanner"></a>
+            </div>
+            <div class="sponsor-div">
+                <a href="https://www.makeschool.com/" target="_blank"><img src="../../images/makeschool.png"
+                        alt="make school"></a>
+            </div>
+            <div class="sponsor-div">
+                <a href="https://balsamiq.com/" target="_blank"><img src="../../images/balsamiq-logo-screen.png"
+                        alt="balsamiq"></a>
+            </div>
+            <div class="sponsor-div">
+                <a href="https://ai-4-all.org/" target="_blank"><img src="../../images/AI4ALL_Logo.png" alt="ai-4-all"></a>
+            </div>
+            <div class="sponsor-div">
+                <a href="https://www.echoar.xyz/" target="_blank"><img src="../../images/echoAR - Logo 2020 - Dark.png"
+                        alt="echoAR"></a>
+            </div>
+            <div class="sponsor-div">
+                <a href="https://www.wolfram.com/" target="_blank"><img src="../../images/wolfram-language-text-logo.png"
+                        alt="wolfram"></a>
+            </div>
+            <div class="sponsor-div">
+                <a href="https://www.taskade.com/" target="_blank"><img src="../../images/taskade-logo.png"
+                        alt="taskade"></a>
+            </div>
+            <div class="sponsor-div">
+                <a href="https://www.stickermule.com/" target="_blank"><img src="../../images/stickermule.png"></a>
+            </div>
+            <div class="sponsor-div">
+                <a href="https://www.jetbrains.com/" target="_blank"><img src="../../images/jetbrains-variant-4.png"
+                        alt="jetbrains"></a>
+            </div>
+            <div class="sponsor-div">
+                <a href="https://repl.it/" target="_blank"><img src="../../images/replit.svg" alt="repl.it"></a>
+            </div>
+            <div class="sponsor-div">
+                <a href="https://www.linode.com/" target="_blank"><img
+                        src="../../images/RGB - Linode - Full - FC - BLK - Transparent.png" alt="Linode"></a>
+            </div>
+            <div class="sponsor-div">
+                <a href="https://www.interviewcake.com/" target="_blank"><img src="../../images/cake_logo_blue_gray.png"
+                        alt="interview cake"></a>
+            </div>
+            <div class="sponsor-div">
+                <a href="https://artofproblemsolving.com/" target="_blank"><img src="../../images/AoPS_Main_Logo (1).png"
+                        alt="aops"></a>
+            </div>
+            <div class="sponsor-div">
+                <a href="https://1password.com/" target="_blank"><img src="../../images/1P-wordmark-536px-tall.png"
+                        alt="1password"></a>
+            </div>
+            <div class="sponsor-div">
+                <a href="https://egghead.io/" target="_blank"><img src="../../images/Egghead-Logo-Dark.png"
+                        alt="egghead.io"></a>
+            </div>
+            <div class="sponsor-div">
+                <a href="https://sketch.com/" target="_blank"><img src="../../images/sketch-logo-light-transparent@2x.png"
+                        alt="sketch"></a>
+            </div>
+            <div class="sponsor-div">
+                <a href="https://digitalocean.com/" target="_blank"><img src="../../images/DO_Logo_Horizontal_Blue.png"
+                        alt="digitalocean"></a>
+            </div>
+            <div class="sponsor-div">
+                <a href="https://postman.com/" target="_blank"><img src="../../images/pm-orange-logo-horiz.svg"
+                        alt="postman"></a>
+            </div>
+            <div class="sponsor-div">
+                <a href="https://centered.app/" target="_blank"><img src="../../images/Centered.png" alt="centered"></a>
+            </div>
+            <div class="sponsor-div">
+                <a href="https://figma.com/" target="_blank"><img id="figma" src="../../images/Figma-Icon.svg"
+                        alt="figma"></a>
+            </div>
+            <div class="sponsor-div">
+                <a href="https://www.stickergiant.com/event-coupons?utm_source=website&utm_medium=event"
+                    target="_blank"><img
+                        src="https://sg-static-cdn.sgsr.us/data/StickerGiant-Flame-Logo-Email-Sign-Up-Thank-You__5d28c8cae4974.png"
+                        alt="Sticker Giant"></a>
+            </div>
+            <div class="sponsor-div">
+                <a href="https://magnifywellness.org/" target="_blank"><img
+                        src="https://cdn.discordapp.com/attachments/836796652794413066/840655506519490600/Maggie_logo.png"
+                        alt="Magnify Wellness"></a>
+            </div>
+            <div class="sponsor-div">
+                <a href="https://www.sublimetext.com/" target="_blank"><img src="../../images/sublime.png"
+                        alt="sublime text"></a>
+            </div>
+
+        </div>
+        -->
+
+        <div id="hcb">
+            <a href="https://hackclub.com/bank/"><img src="../../images/hcb-logo-original-light.png"
+                    alt="Hack Club Bank"></a>
+        </div>
+    </section>
+    <section id="volunteers">
+        <h3>Volunteers</h3>
+        <p>Interested in being a judge, mentor, or workshop leader? Fill out our <b><a
+                    href="https://linktr.ee/citrotech/" target="_blank">volunteer form</a></b>!</p>
+        <!--
+        <div class="grid-container">
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/bethmcbride.png" alt="Beth McBride">
+                <h4>Beth McBride</h4>
+                <h5>Keynote Speaker</h5>
+                <h5>AI4ALL</h5>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/lachlan.jpeg" alt="Lachlan Campbell">
+                <h4>Lachlan Campbell</h4>
+                <h5>Workshop Leader</h5>
+                <h5>Intro to Web Development</h5>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/khushi.jpeg" alt="Khushi Valia">
+                <h4>Khushi Valia</h4>
+                <h5>Workshop Leader</h5>
+                <h5>Intro to Python</h5>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/Shagun_Khare.jpeg" alt="Shagun Khare">
+                <h4>Shagun Khare</h4>
+                <h5>Workshop Leader</h5>
+                <h5>Intro to Data Science</h5>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/Alon_Grinshpoon_3.png" alt="Alon Grinshpoon">
+                <h4>Alon Grinshpoon</h4>
+                <h5>Judge</h5>
+                <h5>echoAR</h5>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/headshot.png" alt="Yuvraj Dwivedi">
+                <h4>Yuvraj Dwivedi</h4>
+                <h5>Workshop Leader</h5>
+                <h5>React Native</h5>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/stagea.jpg" alt="Lucy Hao">
+                <h4>Lucy Hao</h4>
+                <h5>Workshop Leader</h5>
+                <h5>Intro to Github</h5>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/christinachen.jpg" alt="Christina Chen">
+                <h4>Christina Chen</h4>
+                <h5>Workshop Leader</h5>
+                <h5>Intro to Figma</h5>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/sampoder.png" alt="Sam Poder">
+                <h4>Sam Poder</h4>
+                <h5>Workshop Leader</h5>
+                <h5>Intro to Next.js</h5>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/rakshaa.jpg" alt="Rakshaa Viswanathan">
+                <h4>Rakshaa Viswanathan</h4>
+                <h5>Workshop Leader</h5>
+                <h5>Resume Building workshop</h5>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/emily.JPG" alt="Emily Han">
+                <h4>Emily Han</h4>
+                <h5>Workshop Leader</h5>
+                <h5>Social Media / Graphic Design</h5>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/ellayixiuwang.png" alt="Ella Yi Xiu Wang">
+                <h4>Ella Yi Xiu Wang</h4>
+                <h5>Workshop Leader</h5>
+                <h5>Linkedin Profiles 101</h5>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/abigayle.jpeg" alt="Abigayle Peterson">
+                <h4>Abigayle Peterson</h4>
+                <h5>Workshop Leader</h5>
+                <h5>Entrepreneuership + Mental Health</h5>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/izzyLapidusHeadshot.jpg" alt="Izzy Lapidus">
+                <h4>Izzy Lapidus</h4>
+                <h5>Workshop Leader</h5>
+                <h5>Journey in STEM</h5>
+            </div>
+        </div>
+        -->
+    </section>
+    <section id="team">
+        <h3>Team</h3>
+        <div class="grid-container">
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/new_pfp.png" alt="Marina">
+                <h4>Marina Lee</h4>
+                <h5>Lead Director</h5>
+                <a class="team-social" href="https://www.linkedin.com/in/marinahylee/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a class="team-social" href="mailto:marina@citro.tech" target="_blank"><i
+                        class="far fa-envelope"></i></a>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/riley.jpg" alt="Riley">
+                <h4>Riley Chou</h4>
+                <h5>Tech & Sponsorships</h5>
+                <a class="team-social" href="https://www.linkedin.com/in/rileychou/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a class="team-social" href="https://github.com/rileychou" target="_blank"><i
+                        class="fab fa-github"></i></a>
+                <a class="team-social" href="mailto:riley@citro.tech" target="_blank"><i
+                        class="far fa-envelope"></i></a>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/mark.jpg" alt="Mark">
+                <h4>Mark Zhou</h4>
+                <h5>Logistics</h5>
+                <a class="team-social" href="mailto:mark@citro.tech" target="_blank"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/kelly.jpg" alt="Kelly">
+                <h4>Kelly Lee</h4>
+                <h5>Community Engagement</h5>
+                <a class="team-social" href="mailto:kelly@citro.tech" target="_blank"><i
+                        class="far fa-envelope"></i></a>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/jane.jpg" alt="Jane">
+                <h4>Jane Wu</h4>
+                <h5>Community Engagement</h5>
+                <a class="team-social" href="mailto:jane@citro.tech" target="_blank"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/angie.jpg" alt="Angie">
+                <h4>Angie Jin</h4>
+                <h5>Events</h5>
+                <a class="team-social" href="https://www.instagram.com/angiiie.jin/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="team-social" href="mailto:angie@citro.tech" target="_blank"><i
+                        class="far fa-envelope"></i></a>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/nicolette.jpg" alt="Nicolette">
+                <h4>Nicolette Pin</h4>
+                <h5>Logistics</h5>
+                <a class="team-social" href="mailto:nicolette@citro.tech" target="_blank"><i
+                        class="far fa-envelope"></i></a>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/damyan.jpg" alt="Damian">
+                <h4>Damian Yang</h4>
+                <h5>Content Creator</h5>
+                <a class="team-social" href="https://www.linkedin.com/in/damian-y-a017561b7/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a class="team-social" href="https://www.instagram.com/_damiyang_/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="team-social" href="mailto:damian@citro.tech" target="_blank"><i
+                        class="far fa-envelope"></i></a>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/sejal.jpg" alt="Sejal">
+                <h4>Sejal Bilwar</h4>
+                <h5>Events</h5>
+                <a class="team-social" href="https://www.linkedin.com/in/sejal-bilwar-b621b31ab/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a class="team-social" href="https://www.instagram.com/lukupp_/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="team-social" href="mailto:sejal@citro.tech" target="_blank"><i
+                        class="far fa-envelope"></i></a>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="https://github.com/eilla1.png" alt="Ella">
+                <h4>Ella</h4>
+                <h5>Tech</h5>
+                <a class="team-social" href="https://github.com/eilla1" target="_blank"><i
+                        class="fab fa-github"></i></a>
+                <a class="team-social" href="mailto:ella@citro.tech" target="_blank"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/sharana.jpg" alt="Sharana">
+                <h4>Sharana Sabesan</h4>
+                <h5>Events</h5>
+                <a class="team-social" href="https://www.linkedin.com/in/sharana-sabesan-4bb0211b3/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a class="team-social" href="https://www.instagram.com/shara_sabe/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="team-social" href="mailto:sharana@citro.tech" target="_blank"><i
+                        class="far fa-envelope"></i></a>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="../../images/saloni.jpg" alt="Saloni">
+                <h4>Saloni Sivakumar</h4>
+                <h5>Events</h5>
+                <a class="team-social" href="https://www.instagram.com/saloni.sivakumar/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="team-social" href="mailto:saloni@citro.tech" target="_blank"><i
+                        class="far fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section class="social-wrapper">
+            <div class="social-links">
+                <a class="social-buttons" href="https://linktr.ee/citrotech/" target="_blank"><i
+                        class="fas fa-link"></i></a>
+                <a class="social-buttons" href="https://www.linkedin.com/company/citro-tech/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a class="social-buttons"
+                    href="https://www.youtube.com/channel/UC11dTdsSqNHJawj97apdhVA/featured?view_as=subscriber"
+                    target="_blank"><i class="fab fa-youtube"></i></a>
+                <a class="social-buttons" href="https://www.instagram.com/citro.tech/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="social-buttons" href="mailto:info@citro.tech" target="_blank"><i
+                        class="far fa-envelope"></i></a>
+                <!--
+                <a class="social-buttons" href="../2022/index.html" target="_blank"><i
+                        class="far fa-envelope"></i></a>
+                -->
+            </div>
+            <div class="logo">
+                <img id="foot-logo" src="../../images/citrologo.png">
+            </div>
+        </section>
+        <hr>
+        <section class="copyright">
+            <p><small>2023 © Made with ❤️ by Citro Hacks, a 501(c)(3) nonprofit (EIN: 81-2908499).</small></p>
+            <p><small>Fiscally sponsored by Hack Club Bank.</small></p>
+        </section>
+    </footer>
+    <script src="../../scripts/scroll.js"></script>
+    <script src="../../scripts/navbarscript.js"></script>
+    <script src="../../scripts/collapsible.js"></script>
+    <script src="../../scripts/animateOnScroll.js"></script>
+    <script src="../../scripts/scheduleSlides.js"></script>
+    <script src="../../scripts/countdown.js"></script>
+</body>
+
+</html>
