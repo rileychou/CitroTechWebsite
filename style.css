@@ -624,6 +624,10 @@ button {
   -webkit-box-shadow: 0px 5px 10px 1px #ccc;
 }
 
+.prize-holder:hover {
+  transform: scale(1.02)
+}
+
 .yellow {
   background-color: #faecb2;
 }
