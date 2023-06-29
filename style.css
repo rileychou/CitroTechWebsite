@@ -886,6 +886,13 @@ footer section {
   border-radius: 50%;
 }
 
+.social-buttons .fa-lemon {
+  background: #e0d539;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
 #foot-logo {
   width: auto;
   height: 4.5rem;
