@@ -323,7 +323,7 @@ p {
 }
 
 #about {
-  padding: 1em 20vw;
+  padding: 1em 10vw;
   text-align: center;
 }
 #about p {
@@ -600,6 +600,15 @@ button {
   margin-bottom: 5vh;
   position: relative;
 }
+
+.grid-container-upcoming {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(14rem, 1fr));
+  grid-gap: 4em;
+  justify-items: center;
+  text-align: center;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, minmax(14rem, 1fr));
@@ -615,7 +624,7 @@ button {
   padding: 1em 10vw;
 }
 
-.prize-holder {
+.event-holder{
   width: 100%;
   padding: 1em;
   border-radius: 12px;
@@ -624,7 +633,7 @@ button {
   -webkit-box-shadow: 0px 5px 10px 1px #ccc;
 }
 
-.prize-holder:hover {
+.event-holder:hover {
   transform: scale(1.02)
 }
 
@@ -647,12 +656,22 @@ button {
 .pink {
   background-color: #f8d0e9;
 }
-.prize-holder img {
+
+.event-holder img {
   width: 16em;
   height: auto;
 }
 
-.prize-holder ul {
+#grid-container-img img {
+  width: 33em;
+  height: auto;
+  border-style: solid;
+  border-width: 15px;
+  border-color: #d5bfff;
+  border-radius: 12px;
+}
+
+.event-holder ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -698,7 +717,7 @@ button {
 
 .team-member img {
   width: 14rem;
-  height: auto;
+  height: 14rem;
   border-radius: 50%;
   border: 5px solid #ffe580;
   box-shadow: 1px 1px 4px #3a220136;
